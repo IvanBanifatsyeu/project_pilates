@@ -337,7 +337,15 @@ template {
   display: none;
 }
 
-/* $$ Block Header */
-.header {
-  
+@font-face {
+  font-family: "SFUIText";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/SF-UI-Text-Regular.otf") format("otf");
+}
+h1 {
+  height: 200px;
+  font-family: "SFUIText", sans-serif;
+  background-color: aquamarine;
 }
