@@ -344,8 +344,74 @@ template {
   font-display: swap;
   src: url("../fonts/SF-UI-Text-Regular.otf") format("otf");
 }
-h1 {
-  height: 200px;
-  font-family: "SFUIText", sans-serif;
-  background-color: aquamarine;
+.header {
+  background-color: rgb(255, 255, 255);
+}
+.header__container {
+  background-color: rgb(218, 218, 218);
+  width: 1366px;
+  height: 786px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.header__circle1 {
+  background-color: rgb(145, 170, 89);
+  position: absolute;
+  left: -786px;
+  top: -674px;
+  width: 1560px;
+  height: 1460px;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.header__circle2 {
+  background-color: rgb(145, 170, 89);
+  border-radius: 50%;
+  opacity: 0.6;
+  position: absolute;
+  left: 757px;
+  top: 177px;
+  width: 455px;
+  height: 455px;
+  z-index: 4;
+}
+
+.header__circle3 {
+  border-radius: 50%;
+  background-color: rgb(145, 170, 89);
+  opacity: 0.6;
+  position: absolute;
+  left: 1200px;
+  top: 118px;
+  width: 59px;
+  height: 59px;
+  z-index: 5;
+}
+
+.header__circle4 {
+  border-width: 8px;
+  border-color: rgb(145, 170, 89);
+  border-style: solid;
+  border-radius: 50%;
+  opacity: 0.6;
+  position: absolute;
+  left: 1331px;
+  top: 20px;
+  width: 40px;
+  height: 40px;
+  z-index: 6;
+}
+
+.header__pilates-women {
+  background-image: url(../images/header/foto-girl.png);
+  position: absolute;
+  left: 372px;
+  top: 31px;
+  width: 994px;
+  height: 776px;
+  z-index: 7;
 }
