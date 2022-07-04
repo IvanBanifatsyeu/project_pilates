@@ -7,3 +7,33 @@
     src: url("../fonts/SF-UI-Text-Regular.otf") format("otf"),
      
   }
+
+  @font-face {
+    font-family: "SFUIText";
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  
+    src: url("../fonts/sf-ui-text-light.ttf") format("truetype"),
+     
+  }
+
+  @font-face {
+    font-family: "SFUIText";
+    font-weight: medium;
+    font-style: normal;
+    font-display: swap;
+  
+    src: url("../fonts/sf-ui-text-medium.ttf") format("truetype"),
+     
+  }
+
+  @font-face {
+    font-family: "Roboto";
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  
+    src: url("../fonts/Roboto-Light.ttf") format("truetype"),
+     
+  }
