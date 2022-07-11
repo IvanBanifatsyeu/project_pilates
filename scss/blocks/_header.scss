@@ -1,236 +1,150 @@
 .header {
-	background-color: $color-background;
-	position: relative;
-	z-index: -4;
-
-	&__container {
-		background-color: beige;
-		max-width: 1366px;
-		height: 786px;
-		margin-left: auto;
-		margin-right: auto;
-		position: relative;
-		overflow: hidden;
-		z-index: -4;
-	}
+  background-image: url(../../images/header/background1366-786.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 786px;
+  position: relative;
+  padding: 28px 100px 0px 100px;
 }
 
-//$$background circles
+//$$ bread-crumbs
 
-.header__circle1 {
-	background-color: $color-style;
-	position: absolute;
-	left: -786px;
-	top: -674px;
-	width: 1560px;
-	height: 1460px;
-	z-index: -3;
-	border-radius: 50%;
+.header__bread-crumbs {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 
-.header__circle2 {
-	background-color: $color-style;
-	border-radius: 50%;
-	opacity: 0.6;
-	position: absolute;
-	left: 757px;
-	top: 177px;
-	width: 455px;
-	height: 455px;
-	z-index: -3;
+.bread-crumbs {
+  display: flex;
+  flex-direction: column;
+  height: 206px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 36px;
+
+  &__number {
+    font-size: 16px;
+    font-family: $font-common;
+    color: $color-bread-crumbs;
+    opacity: 0.5;
+    font-weight: 700;
+  }
+
+  &__line {
+    background-color: $color-bread-crumbs;
+    width: 2px;
+    height: 60px;
+    opacity: 0.5;
+  }
+
+  &__circle {
+    border-radius: 50%;
+    background-color: $color-bread-crumbs;
+    width: 5px;
+    height: 5px;
+    opacity: 0.5;
+  }
+
+  &__circle_circle_active {
+    border-radius: 50%;
+    background-color: $color-bread-crumbs;
+    width: 5px;
+    height: 5px;
+    opacity: 1;
+  }
 }
 
-.header__circle3 {
-	border-radius: 50%;
-	background-color: $color-style;
-	opacity: 0.6;
-	position: absolute;
-	left: 1200px;
-	top: 118px;
-	width: 59px;
-	height: 59px;
-	z-index: -3;
-}
-
-.header__circle4 {
-	border-width: 8px;
-	border-color: $color-style;
-	border-style: solid;
-	border-radius: 50%;
-	opacity: 0.6;
-	position: absolute;
-	left: 1331px;
-	top: 20px;
-	width: 40px;
-	height: 40px;
-	z-index: -3;
-}
-
-.header__pilates-women {
-	background-image: url(../images/header/foto-girl.png);
-	position: absolute;
-	left: 372px;
-	top: 31px;
-	width: 994px;
-	height: 776px;
-	z-index: -2;
-}
-
-//$$ page-index
-
-.header__page-index {
-	position: absolute;
-	right: 0;
-	top: 240px;
-}
-
-.page-index {
-	display: flex;
-	flex-direction: column;
-	height: 206px;
-	justify-content: space-between;
-	align-items: center;
-	padding: 0 36px;
-
-	&__number {
-		font-size: 16px;
-		font-family: $font-common;
-		color: $color-page-index;
-		opacity: 0.5;
-		font-weight: 700;
-	}
-
-	&__line {
-		background-color: $color-page-index;
-		width: 2px;
-		height: 60px;
-		opacity: 0.5;
-	}
-
-	&__circle1 {
-		border-radius: 50%;
-		background-color: $color-page-index;
-		width: 5px;
-		height: 5px;
-		opacity: 0.5;
-	}
-
-	&__circle2 {
-		border-radius: 50%;
-		background-color: $color-page-index;
-		width: 5px;
-		height: 5px;
-		opacity: 0.5;
-	}
-
-	&__circle3 {
-		border-radius: 50%;
-		background-color: $color-page-index;
-		width: 5px;
-		height: 5px;
-		opacity: 0.5;
-	}
-
-	&__circle4 {
-		border-radius: 50%;
-		background-color: $color-page-index;
-		width: 5px;
-		height: 5px;
-		opacity: 0.5;
-	}
-
-	&__circle5 {
-		border-radius: 50%;
-		background-color: $color-page-index;
-		width: 5px;
-		height: 5px;
-		opacity: 0.5;
-	}
-}
-
-//$$ top=line
+//$$ top-line
 
 .header__top-line {
-	margin: 28px 100px 124px 100px;
+  margin-bottom: 124px;
 }
 
 .top-line {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-	&__burger-menu {
-		background-image: url(../../images/header/burger-menu.png);
-		width: 23px;
-		height: 16px;
-	}
+  &__logo {
+    cursor: pointer;
+  }
 
-	.logo {
-		display: flex;
-		flex-direction: column;
+  &__burger-menu {
+    background-image: url(../../images/header/burger-menu.png);
+    width: 23px;
+    height: 16px;
+    margin-left: 26px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
 
-		&__under-text {
-			color: #fefefe;
-			font-family: $font-common;
-			font-size: 12px;
-			text-transform: uppercase;
-			letter-spacing: 0.1em;
-			margin-top: 8px;
-		}
-	}
+  .phone {
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: $font-common;
+    letter-spacing: 0.01em;
+    transition: color 0.5s linear;
 
-	&__telephone {
-		color: #000;
-		font-size: 14px;
-		font-weight: 700;
-		font-family: $font-common;
-		letter-spacing: 0.02em;
-		
-	}
+    &:hover {
+      color: $color-style;
+      transition: color 0.2s linear;
+    }
+  }
 }
 
 //$$ content-header
 
-.header__content-header {
-	margin: 0 800px 100px 100px;
+.header__content-intro {
+  width: 400px;
 }
 
-.content-header {
-	display: flex;
-	flex-direction: column;
-	justify-content: start;
-	height: 290px;
+.content-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
 
-	&__title {
-		color: #fff;
-		font-family: $font-secondary;
-		text-transform: uppercase;
-		letter-spacing: 0.075em;
-		font-weight: 300;
-		font-size: 58px;
-		margin-bottom: 24px;
-		
-	}
+  &__title {
+    color: #fff;
+    font-family: $font-secondary;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    font-weight: 300;
+    font-size: 58px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+  }
 
-	&__under-title-text {
-		color: #fff;
-		font-size: 17px;
-		font-family: $font-common;
-		font-weight: 300;
-		letter-spacing: 0.02em;
-		margin-bottom: 52px;
-	}
+  &__paragraph {
+    color: #fff;
+    font-size: 17px;
+    font-family: $font-common;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    margin-bottom: 52px;
+  }
 
-	&__button {
-		//background-color: transparent;
-		background-color: transparent;
-		border: 2px solid rgb(255, 255, 255);
-		width: 248px;
-		height: 52px;
-		border-radius: 24px;
-		font-family: $font-common ;
-		font-weight: 500;
-		color: #fff;
-		font-size: 14px;
-	}
+  &__button {
+    background-color: transparent;
+    border: 2px solid #fff;
+    padding: 16px 30px;
+    max-width: 248px;
+    border-radius: 24px;
+    font-family: $font-common;
+    font-weight: 500;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+  }
+
+  &__button::after {
+    content: url(../../images/header/arrow.png);
+    position: absolute;
+    top: 50%;
+    transform: translate(16%, -40%);
+  }
 }

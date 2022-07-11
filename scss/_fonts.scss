@@ -1,39 +1,39 @@
 @font-face {
-    font-family: "SFUIText";
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-  
-    src: url("../fonts/SF-UI-Text-Regular.otf") format("otf"),
-     
-  }
+  font-family: 'SFUIText';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 
-  @font-face {
-    font-family: "SFUIText";
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-  
-    src: url("../fonts/sf-ui-text-light.ttf") format("truetype"),
-     
-  }
+  src: url('../fonts/sfuitext-bold-webfont.woff2') format('woff2'),
+    url('../fonts/sfuitext-bold-webfont.woff') format('woff');
+}
 
-  @font-face {
-    font-family: "SFUIText";
-    font-weight: medium;
-    font-style: normal;
-    font-display: swap;
-  
-    src: url("../fonts/sf-ui-text-medium.ttf") format("truetype"),
-     
-  }
+@font-face {
+  font-family: 'SFUIText';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 
-  @font-face {
-    font-family: "Roboto";
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-  
-    src: url("../fonts/Roboto-Light.ttf") format("truetype"),
-     
-  }
+  src: url('../fonts/sfuitext-medium-webfont.woff2') format('woff2'),
+    url('../fonts/sfuitext-medium-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'SFUIText';
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+
+  src: url('../fonts/sfuitext-light-webfont.woff2') format('woff2'),
+    url('../fonts/sfuitext-light-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+
+  src: url('../fonts/roboto-light-webfont.woff2') format('woff2'),
+    url('../fonts/roboto-light-webfont.woff') format('woff');
+}
