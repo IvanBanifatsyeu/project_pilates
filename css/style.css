@@ -351,13 +351,9 @@ template {
   font-display: swap;
   src: url("../fonts/opensans-variablefont_wdthwght-webfont.woff2") format("woff2"), url("../fonts/opensans-variablefont_wdthwght-webfont.woff") format("woff");
 }
-p,
-h1 {
-  margin: 0;
-}
-
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 a {
@@ -596,7 +592,7 @@ a {
   }
 }
 .about {
-  margin-top: 108px;
+  margin-top: 110px;
   background-image: url(../images/about/background1366-729.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -605,9 +601,25 @@ a {
   height: 729px;
   background-color: lightgrey;
 }
-
 .about__bread-crumbs {
   position: absolute;
   right: 0;
   top: 214px;
+}
+
+.content-box__title {
+  color: rgba(0, 0, 0, 0.871);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 0.5;
+}
+.content-box__title::before {
+  content: "";
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.871);
+  width: 37px;
+  height: 2px;
+  transform: translateY(-15px);
+  margin-right: 18px;
 }

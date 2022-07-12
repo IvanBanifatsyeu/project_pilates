@@ -1,24 +1,47 @@
 .about {
-    margin-top: 108px;
+  margin-top: 110px;
   background-image: url(../images/about/background1366-729.png);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   padding: 0px 100px 0px 100px;
   height: 729px;
-  
-  background-color: lightgrey;
-}
 
-//$$ bread-crumbs (common)
-.about__bread-crumbs {
+  background-color: lightgrey;
+
+  //$$ bread-crumbs (common)
+  &__bread-crumbs {
     position: absolute;
     right: 0;
     top: 214px;
   }
+}
 
-  //$$ content-box
+//$$ content-box
+
+.content-box {
+  &__title {
+    color: rgba(0, 0, 0, 0.871);
+    font-family: $font-secondary;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 0.5;
+   // position: relative;
+
+    
+  }
 
 
-
-  
+  &__title::before {
+    content: '';
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.871);
+    width: 37px;
+    height: 2px;
+    //position: absolute;
+    transform: translateY(-15px);
+    margin-right: 18px;
+    
+    
+  }
+}
