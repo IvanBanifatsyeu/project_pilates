@@ -7,7 +7,7 @@
   height: 786px;
 }
 
-//$$ bread-crumbs
+//$$ bread-crumbs (common)
 
 .header__bread-crumbs {
   position: absolute;
@@ -15,56 +15,7 @@
   top: 238px;
 }
 
-.bread-crumbs {
-  display: flex;
-  flex-direction: column;
 
-  justify-content: start;
-  align-items: center;
-  padding: 0 36px;
-
-  &__number {
-    font-size: 16px;
-    font-family: $font-common;
-    color: $color-bread-crumbs;
-    opacity: 0.5;
-    font-weight: 700;
-    margin-bottom: 16px;
-  }
-
-  &__line {
-    background-color: $color-bread-crumbs;
-    width: 2px;
-    height: 60px;
-    opacity: 0.5;
-  }
-
-  &__circle {
-    border-radius: 50%;
-    background-color: $color-bread-crumbs;
-    width: 5px;
-    height: 5px;
-    opacity: 0.5;
-  }
-
-  &__circle_active {
-    border-radius: 50%;
-    background-color: $color-bread-crumbs;
-    width: 5px;
-    height: 5px;
-    opacity: 1;
-    margin-top: 10px;
-  }
-
-  &__link {
-    padding: 9px 8px;
-    &:hover {
-      .bread-crumbs__circle {
-        background-color: $color-style;
-      }
-    }
-  }
-}
 //$$ top-line
 
 .header__top-line {

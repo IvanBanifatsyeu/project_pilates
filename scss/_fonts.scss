@@ -1,3 +1,4 @@
+//$$ SFUIText
 @font-face {
   font-family: 'SFUIText';
   font-weight: 700;
@@ -28,6 +29,8 @@
     url('../fonts/sfuitext-light-webfont.woff') format('woff');
 }
 
+//$$ Roboto
+
 @font-face {
   font-family: 'Roboto';
   font-weight: 300;
@@ -36,4 +39,26 @@
 
   src: url('../fonts/roboto-light-webfont.woff2') format('woff2'),
     url('../fonts/roboto-light-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+
+  src: url('../fonts/roboto-regular-webfont.woff2') format('woff2'),
+    url('../fonts/roboto-regular-webfont.woff') format('woff');
+}
+
+//$$ Open_Sans
+
+@font-face {
+  font-family: 'Open_Sans';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+
+  src: url('../fonts/opensans-variablefont_wdthwght-webfont.woff2') format('woff2'),
+    url('../fonts/opensans-variablefont_wdthwght-webfont.woff') format('woff');
 }
