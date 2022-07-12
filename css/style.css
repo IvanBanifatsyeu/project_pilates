@@ -503,18 +503,21 @@ a {
   cursor: pointer;
   position: relative;
 }
+.content-intro__button:hover {
+  border-color: #bdcc9b;
+  color: #bdcc9b;
+}
 .content-intro__button::after {
   content: url(../images/header/arrow.png);
   position: absolute;
   top: 50%;
   transform: translate(16%, -40%);
 }
-
-h1:last-child {
-  border: 1px solid red;
+.content-intro__button:hover::after {
+  content: url(../images/header/arrow_hover.png);
 }
 
-@media screen and (max-width: 764px) {
+@media (max-width: 1023px) {
   .header {
     background-image: url(../images/header/background764-660.png);
     height: 660px;
@@ -534,7 +537,7 @@ h1:last-child {
     margin-top: 6px;
   }
   .top-line__burger-menu {
-    margin-left: 64px;
+    margin-left: 62px;
     margin-top: 21px;
   }
   .top-line .phone {
@@ -549,10 +552,9 @@ h1:last-child {
     margin-left: 5px;
   }
 }
-@media screen and (max-width: 320px) {
+@media (max-width: 639px) {
   .header {
     background-image: url(/images/header/background320-481.png);
-    background-color: darkgray;
     height: 481px;
     padding: 0px;
   }
