@@ -7,7 +7,7 @@
   padding: 0px 100px 0px 100px;
   height: 729px;
 
-  background-color: lightgrey;
+  
 
   //$$ bread-crumbs (common)
   &__bread-crumbs {
@@ -20,17 +20,17 @@
 //$$ content-box
 
 .content-box {
+  max-width: 390px;
+
+
   &__title {
     color: rgba(0, 0, 0, 0.871);
     font-family: $font-secondary;
     font-weight: 400;
     font-size: 48px;
     line-height: 0.5;
-   // position: relative;
-
-    
+    margin-bottom: 62px;
   }
-
 
   &__title::before {
     content: '';
@@ -38,10 +38,56 @@
     background-color: rgba(0, 0, 0, 0.871);
     width: 37px;
     height: 2px;
-    //position: absolute;
     transform: translateY(-15px);
     margin-right: 18px;
-    
-    
+  }
+
+  &__paragraph {
+    color: rgba(0, 0, 0, 0.871);
+    font-family: $font-minor;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 26px;
+  }
+
+  &__text {
+    color: rgba(0, 0, 0, 0.871);
+    font-family: $font-common;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 33px;
+  }
+
+  &__detail {
+    font-size: 14px;
+
+    color: #2a4f37;
+    font-weight: 600;
+    font-family: $font-common;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+
+    &:hover {
+      color: #bdcc9b;
+      transition: color 0.2s linear;
+    }
+
+    &::after {
+      content: '';
+       display: inline-block;
+       width: 8px;
+       height: 8px;
+       border-top: 2px solid #2a4f37;
+       border-right: 2px solid #2a4f37;
+       transform: translateX(5px) rotate(45deg);
+       
+    }
+
+    &:hover::after {
+      border-color: #bdcc9b;
+      transition: border-color 0.2s linear;
+    }
   }
 }

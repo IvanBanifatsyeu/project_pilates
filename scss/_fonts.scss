@@ -11,6 +11,16 @@
 
 @font-face {
   font-family: 'SFUIText';
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+
+  src: url('../fonts/sfuitext-semibold-webfont.woff2') format('woff2'),
+    url('../fonts/sfuitext-semibold-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'SFUIText';
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -51,10 +61,10 @@
     url('../fonts/roboto-regular-webfont.woff') format('woff');
 }
 
-//$$ Open_Sans
+//$$ Open Sans
 
 @font-face {
-  font-family: 'Open_Sans';
+  font-family: 'Open Sans';
   font-weight: 400;
   font-style: normal;
   font-display: swap;

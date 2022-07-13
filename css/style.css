@@ -318,6 +318,13 @@ template {
 }
 @font-face {
   font-family: "SFUIText";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/sfuitext-semibold-webfont.woff2") format("woff2"), url("../fonts/sfuitext-semibold-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "SFUIText";
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -345,7 +352,7 @@ template {
   src: url("../fonts/roboto-regular-webfont.woff2") format("woff2"), url("../fonts/roboto-regular-webfont.woff") format("woff");
 }
 @font-face {
-  font-family: "Open_Sans";
+  font-family: "Open Sans";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -353,6 +360,10 @@ template {
 }
 * {
   box-sizing: border-box;
+  margin: 0;
+}
+
+h1 {
   margin: 0;
 }
 
@@ -475,8 +486,8 @@ a {
   letter-spacing: 0.07em;
   font-weight: 300;
   font-size: 58px;
-  margin-bottom: 20px;
   line-height: 1.2;
+  margin-bottom: 20px;
 }
 .content-intro__paragraph {
   color: #fff;
@@ -502,6 +513,7 @@ a {
 .content-intro__button:hover {
   border-color: #bdcc9b;
   color: #bdcc9b;
+  transition: color 0.2s linear, border-color 0.2s linear;
 }
 .content-intro__button::after {
   content: url(../images/header/arrow.png);
@@ -599,7 +611,6 @@ a {
   position: relative;
   padding: 0px 100px 0px 100px;
   height: 729px;
-  background-color: lightgrey;
 }
 .about__bread-crumbs {
   position: absolute;
@@ -607,12 +618,16 @@ a {
   top: 214px;
 }
 
+.content-box {
+  max-width: 390px;
+}
 .content-box__title {
   color: rgba(0, 0, 0, 0.871);
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 48px;
   line-height: 0.5;
+  margin-bottom: 62px;
 }
 .content-box__title::before {
   content: "";
@@ -622,4 +637,45 @@ a {
   height: 2px;
   transform: translateY(-15px);
   margin-right: 18px;
+}
+.content-box__paragraph {
+  color: rgba(0, 0, 0, 0.871);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 26px;
+}
+.content-box__text {
+  color: rgba(0, 0, 0, 0.871);
+  font-family: "SFUIText", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 33px;
+}
+.content-box__detail {
+  font-size: 14px;
+  color: #2a4f37;
+  font-weight: 600;
+  font-family: "SFUIText", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.content-box__detail:hover {
+  color: #bdcc9b;
+  transition: color 0.2s linear;
+}
+.content-box__detail::after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #2a4f37;
+  border-right: 2px solid #2a4f37;
+  transform: translateX(5px) rotate(45deg);
+}
+.content-box__detail:hover::after {
+  border-color: #bdcc9b;
+  transition: border-color 0.2s linear;
 }

@@ -2,7 +2,7 @@
   background-image: url(../images/header/background1366-786.png);
   background-size: cover;
   background-repeat: no-repeat;
-  //background-position: center;
+  //*background-position: center;
   position: relative;
   padding: 28px 100px 0px 100px;
   height: 786px;
@@ -74,8 +74,8 @@
     letter-spacing: 0.07em;
     font-weight: 300;
     font-size: 58px;
-    margin-bottom: 20px;
     line-height: 1.2;
+    margin-bottom: 20px;
   }
 
   &__paragraph {
@@ -103,6 +103,7 @@
     &:hover {
       border-color: #bdcc9b;
       color: #bdcc9b;
+      transition: color 0.2s linear, border-color 0.2s linear;
     }
   }
 
@@ -118,112 +119,110 @@
   }
 }
 
-  // $$ Tablet version
+// $$ Tablet version
 
+@media (max-width: 1023px) {
+  .header {
+    background-image: url(../images/header/background764-660.png);
+    height: 660px;
+    padding: 11px 40px 0px 56px;
+  }
 
-  @media (max-width: 1023px) {
-    .header {
-      background-image: url(../images/header/background764-660.png);
-      height: 660px;
-      padding: 11px 40px 0px 56px;
+  .header__bread-crumbs {
+    display: none;
+  }
+
+  .header__top-line {
+    margin-bottom: 108px;
+  }
+
+  .top-line {
+    align-items: flex-start;
+
+    &__logo {
+      transform: scale(0.8);
+      margin-top: 6px;
     }
 
-    .header__bread-crumbs {
+    &__burger-menu {
+      margin-left: 62px;
+      margin-top: 21px;
+    }
+
+    .phone {
+      margin-top: 21px;
+      display: inline-block;
+    }
+  }
+
+  .content-intro {
+    &__title {
+      font-size: 48px;
+      margin-bottom: 44px;
+    }
+
+    &__button,
+    &__paragraph {
+      margin-left: 5px;
+    }
+  }
+}
+
+// //$$ mobile version
+
+@media (max-width: 639px) {
+  .header {
+    background-image: url(/images/header/background320-481.png);
+    height: 481px;
+    padding: 0px;
+  }
+
+  .header__top-line {
+    margin-bottom: 78px;
+  }
+
+  .top-line {
+    &__logo {
+      transform: scale(0.6);
+      margin-top: 2px;
+      margin-left: 2px;
+    }
+
+    &__burger-menu {
+      margin-left: 0px;
+      margin-right: 6px;
+      transform: scale(0.75);
+    }
+
+    &__phone {
+      display: none;
+    }
+  }
+
+  .header__content-intro {
+    width: 300px;
+    padding-left: 15px;
+  }
+
+  .content-intro {
+    &__title {
+      font-size: 30px;
+      margin-bottom: 22px;
+    }
+
+    &__paragraph {
       display: none;
     }
 
-    .header__top-line {
-      margin-bottom: 108px;
+    &__button {
+      margin: 0;
+      font-size: 11px;
+      padding: 11px 0px;
+      max-width: 158px;
     }
 
-    .top-line {
-      align-items: flex-start;
-
-      &__logo {
-        transform: scale(0.8);
-        margin-top: 6px;
-      }
-
-      &__burger-menu {
-        margin-left: 62px;
-        margin-top: 21px;
-      }
-
-      .phone {
-        margin-top: 21px;
-        display: inline-block;
-      }
-    }
-
-    .content-intro {
-      &__title {
-        font-size: 48px;
-        margin-bottom: 44px;
-      }
-
-      &__button,
-      &__paragraph {
-        margin-left: 5px;
-      }
+    &__button::after {
+      display: none;
     }
   }
-
-  // //$$ mobile version
-
-  @media (max-width: 639px) {
-    .header {
-      background-image: url(/images/header/background320-481.png);
-      height: 481px;
-      padding: 0px;
-    }
-
-    .header__top-line {
-      margin-bottom: 78px;
-    }
-
-    .top-line {
-      &__logo {
-        transform: scale(0.6);
-        margin-top: 2px;
-        margin-left: 2px;
-      }
-
-      &__burger-menu {
-        margin-left: 0px;
-        margin-right: 6px;
-        transform: scale(0.75);
-      }
-
-      &__phone {
-        display: none;
-      }
-    }
-
-    .header__content-intro {
-      width: 300px;
-      padding-left: 15px;
-    }
-
-    .content-intro {
-      &__title {
-        font-size: 30px;
-        margin-bottom: 22px;
-      }
-
-      &__paragraph {
-        display: none;
-      }
-
-      &__button {
-        margin: 0;
-        font-size: 11px;
-        padding: 11px 0px;
-        max-width: 158px;
-      }
-
-      &__button::after {
-        display: none;
-      }
-    }
-  }
-
+}
