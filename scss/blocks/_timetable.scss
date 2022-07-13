@@ -1,0 +1,90 @@
+.timetable {
+  position: relative;
+  padding: 0;
+  height: 833px;
+  
+
+  //$$ bread-crumbs (common)
+  &__bread-crumbs {
+    position: absolute;
+    right: 0;
+    top: 314px;
+  }
+}
+
+//$$ content-box3
+
+.content-box3 {
+  padding: 24px 100px 116px 100px;
+
+  &__title {
+    color: rgba(0, 0, 0, 0.871);
+    font-family: $font-secondary;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 0.5;
+    margin-bottom: 70px;
+  }
+
+  &__title::before {
+    content: '';
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.871);
+    width: 37px;
+    height: 2px;
+    transform: translateY(-15px);
+    margin-right: 18px;
+  }
+}
+
+//$$ card
+
+.holder {
+  display: flex;
+  justify-content: space-between;
+  
+
+  &__card {
+    width: 32.18%;
+    height: 591px;
+    background-color: #91aa59;
+    opacity: 0.5;
+    border-radius: 4px;
+  }
+
+  .card1 {
+    opacity: 0.5;
+    
+    position: relative;
+
+    
+  }
+
+  .card2 {
+    opacity: 0.7;
+
+    position: relative;
+
+   
+  }
+
+  .card3 {
+    opacity: 0.9;
+
+    position: relative;
+
+    
+  }
+
+  .numberfon {
+    font-size: 210px;
+    font-family: 'ProximaNova', sans-serif;
+    line-height: 1.2;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.102);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top:45px;
+  }
+}

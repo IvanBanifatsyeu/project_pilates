@@ -82,3 +82,15 @@
   src: url('../fonts/opensans-variablefont_wdthwght-webfont.woff2') format('woff2'),
     url('../fonts/opensans-variablefont_wdthwght-webfont.woff') format('woff');
 }
+
+//$$ Proxima Nova
+
+@font-face {
+  font-family: 'ProximaNova';
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+
+  src: url('../fonts/fontsfree-net-proxima-nova-xbold-webfont.woff2') format('woff2'),
+    url('../fonts/fontsfree-net-proxima-nova-xbold-webfont.woff') format('woff');
+}

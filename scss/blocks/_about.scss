@@ -15,10 +15,12 @@
   }
 }
 
-//$$ content-box
+//$$ content-box2
 
-.content-box {
+.content-box2 {
   max-width: 390px;
+
+  
 
   &__title {
     color: rgba(0, 0, 0, 0.871);
@@ -101,7 +103,7 @@
     }
   }
 
-  .content-box {
+  .content-box2 {
     width: 316px;
 
     &__title {
@@ -139,7 +141,7 @@
     height: 458px;
     padding: 48px 0 0 14px;
   }
-  .content-box {
+  .content-box2 {
     width: 294px;
 
     &__title {
