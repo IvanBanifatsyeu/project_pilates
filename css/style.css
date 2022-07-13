@@ -352,6 +352,13 @@ template {
   src: url("../fonts/roboto-regular-webfont.woff2") format("woff2"), url("../fonts/roboto-regular-webfont.woff") format("woff");
 }
 @font-face {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/roboto-medium-webfont.woff2") format("woff2"), url("../fonts/roboto-medium-webfont.woff") format("woff");
+}
+@font-face {
   font-family: "Open Sans";
   font-weight: 400;
   font-style: normal;
@@ -425,6 +432,7 @@ a {
   background-image: url(../images/header/background1366-786.png);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   position: relative;
   padding: 28px 100px 0px 100px;
   height: 786px;
@@ -525,7 +533,7 @@ a {
   content: url(../images/header/arrow_hover.png);
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
   .header {
     background-image: url(../images/header/background764-660.png);
     height: 660px;
@@ -560,7 +568,7 @@ a {
     margin-left: 5px;
   }
 }
-@media (max-width: 639px) {
+@media (max-width: 640px) {
   .header {
     background-image: url(/images/header/background320-481.png);
     height: 481px;
@@ -607,10 +615,10 @@ a {
   background-image: url(../images/about/background1366-925.png);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   position: relative;
   padding: 110px 100px 0px 100px;
   height: 925px;
-  background-color: aqua;
 }
 .about__bread-crumbs {
   position: absolute;
@@ -678,4 +686,76 @@ a {
 .content-box__detail:hover::after {
   border-color: #bdcc9b;
   transition: border-color 0.2s linear;
+}
+
+@media (max-width: 1024px) {
+  .about {
+    background-image: url(../../images/about/background764-552.png);
+    height: 552px;
+    padding: 92px 620px 0px 62px;
+  }
+  .about__bread-crumbs {
+    display: none;
+  }
+  .content-box {
+    width: 316px;
+  }
+  .content-box__title {
+    font-size: 24px;
+    margin-bottom: 46px;
+    font-weight: 500;
+  }
+  .content-box__title::before {
+    transform: translateY(-8px);
+  }
+  .content-box__paragraph {
+    line-height: 1.2;
+    letter-spacing: 0.012em;
+    margin-bottom: 19px;
+  }
+  .content-box__text {
+    line-height: 1.2;
+    letter-spacing: 0.007em;
+    margin-bottom: 44px;
+  }
+  .content-box__detail {
+    letter-spacing: 0.12em;
+  }
+}
+@media (max-width: 640px) {
+  .about {
+    background-image: url(../../images/about/background320-458.png);
+    height: 458px;
+    padding: 48px 0 0 14px;
+  }
+  .content-box {
+    width: 294px;
+  }
+  .content-box__title {
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-weight: 500;
+  }
+  .content-box__title::before {
+    width: 18px;
+    height: 1px;
+    margin-right: 9px;
+    transform: translateY(-5px);
+  }
+  .content-box__paragraph {
+    font-size: 14px;
+    margin-bottom: 9px;
+  }
+  .content-box__text {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+  .content-box__detail {
+    letter-spacing: 0.12em;
+    font-size: 12px;
+  }
+  .content-box__detail::after {
+    width: 6px;
+    height: 6px;
+  }
 }

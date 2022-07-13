@@ -1,15 +1,11 @@
 .about {
-  //margin-top: 110px;
-  //background-image: url(../images/about/background1366-729.png);
   background-image: url(../images/about/background1366-925.png);
   background-size: $background-size;
   background-repeat: no-repeat;
+  background-position: $background-position;
   position: relative;
   padding: 110px 100px 0px 100px;
   height: 925px;
-  background-color: aqua;
-
-  
 
   //$$ bread-crumbs (common)
   &__bread-crumbs {
@@ -24,7 +20,6 @@
 .content-box {
   max-width: 390px;
 
-
   &__title {
     color: rgba(0, 0, 0, 0.871);
     font-family: $font-secondary;
@@ -32,7 +27,6 @@
     font-size: 48px;
     line-height: 0.5;
     margin-bottom: 62px;
-    
   }
 
   &__title::before {
@@ -79,13 +73,12 @@
 
     &::after {
       content: '';
-       display: inline-block;
-       width: 8px;
-       height: 8px;
-       border-top: 2px solid #2a4f37;
-       border-right: 2px solid #2a4f37;
-       transform: translateX(5px) rotate(45deg);
-       
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-top: 2px solid #2a4f37;
+      border-right: 2px solid #2a4f37;
+      transform: translateX(5px) rotate(45deg);
     }
 
     &:hover::after {
@@ -97,6 +90,90 @@
 
 // $$ Tablet version
 
-@media (max-width: 1023px) {
+@media (max-width: $tablet-vers) {
+  .about {
+    background-image: url(../../images/about/background764-552.png);
+    height: 552px;
+    padding: 92px 620px 0px 62px;
 
+    &__bread-crumbs {
+      display: none;
+    }
+  }
+
+  .content-box {
+    width: 316px;
+
+    &__title {
+      font-size: 24px;
+      margin-bottom: 46px;
+      font-weight: 500;
+    }
+
+    &__title::before {
+      transform: translateY(-8px);
+    }
+    &__paragraph {
+      line-height: 1.2;
+      letter-spacing: 0.012em;
+      margin-bottom: 19px;
+    }
+
+    &__text {
+      line-height: 1.2;
+      letter-spacing: 0.007em;
+      margin-bottom: 44px;
+    }
+
+    &__detail {
+      letter-spacing: 0.12em;
+    }
+  }
+}
+
+//$$ mobile version
+
+@media (max-width: $mobile-vers) {
+  .about {
+    background-image: url(../../images/about/background320-458.png);
+    height: 458px;
+    padding: 48px 0 0 14px;
+  }
+  .content-box {
+    width: 294px;
+
+    &__title {
+      font-size: 18px;
+      margin-bottom: 30px;
+      font-weight: 500;
+      
+    }
+
+    &__title::before {
+      width: 18px;
+      height: 1px;
+      margin-right: 9px;
+      transform: translateY(-5px);
+    }
+
+    &__paragraph {
+      font-size: 14px;
+      margin-bottom: 9px;
+    }
+
+    &__text {
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
+
+    &__detail {
+      letter-spacing: 0.12em;
+      font-size: 12px;
+
+      &::after {
+        width: 6px;
+      height: 6px;
+      }
+    }
+  }
 }

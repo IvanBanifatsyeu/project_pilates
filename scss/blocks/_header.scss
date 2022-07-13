@@ -2,10 +2,11 @@
   background-image: url(../images/header/background1366-786.png);
   background-size: $background-size;
   background-repeat: no-repeat;
-  //*background-position: center;
+  background-position: $background-position;
   position: relative;
   padding: 28px 100px 0px 100px;
   height: 786px;
+  
 }
 
 //$$ bread-crumbs (common)
@@ -121,7 +122,7 @@
 
 // $$ Tablet version
 
-@media (max-width: 1023px) {
+@media (max-width: $tablet-vers) {
   .header {
     background-image: url(../images/header/background764-660.png);
     height: 660px;
@@ -168,9 +169,9 @@
   }
 }
 
-// //$$ mobile version
+//$$ mobile version
 
-@media (max-width: 639px) {
+@media (max-width: $mobile-vers) {
   .header {
     background-image: url(/images/header/background320-481.png);
     height: 481px;
