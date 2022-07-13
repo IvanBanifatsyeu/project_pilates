@@ -604,18 +604,18 @@ a {
   }
 }
 .about {
-  margin-top: 110px;
-  background-image: url(../images/about/background1366-729.png);
+  background-image: url(../images/about/background1366-925.png);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  padding: 0px 100px 0px 100px;
-  height: 729px;
+  padding: 110px 100px 0px 100px;
+  height: 925px;
+  background-color: aqua;
 }
 .about__bread-crumbs {
   position: absolute;
   right: 0;
-  top: 214px;
+  top: 324px;
 }
 
 .content-box {

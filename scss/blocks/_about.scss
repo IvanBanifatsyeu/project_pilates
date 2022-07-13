@@ -1,11 +1,13 @@
 .about {
-  margin-top: 110px;
-  background-image: url(../images/about/background1366-729.png);
-  background-size: cover;
+  //margin-top: 110px;
+  //background-image: url(../images/about/background1366-729.png);
+  background-image: url(../images/about/background1366-925.png);
+  background-size: $background-size;
   background-repeat: no-repeat;
   position: relative;
-  padding: 0px 100px 0px 100px;
-  height: 729px;
+  padding: 110px 100px 0px 100px;
+  height: 925px;
+  background-color: aqua;
 
   
 
@@ -13,7 +15,7 @@
   &__bread-crumbs {
     position: absolute;
     right: 0;
-    top: 214px;
+    top: 324px;
   }
 }
 
@@ -30,6 +32,7 @@
     font-size: 48px;
     line-height: 0.5;
     margin-bottom: 62px;
+    
   }
 
   &__title::before {
@@ -90,4 +93,10 @@
       transition: border-color 0.2s linear;
     }
   }
+}
+
+// $$ Tablet version
+
+@media (max-width: 1023px) {
+
 }

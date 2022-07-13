@@ -1,6 +1,6 @@
 .header {
   background-image: url(../images/header/background1366-786.png);
-  background-size: cover;
+  background-size: $background-size;
   background-repeat: no-repeat;
   //*background-position: center;
   position: relative;
