@@ -2,7 +2,7 @@
   position: relative;
   padding: 0;
   height: 833px;
-  
+  background-color: rgb(240, 243, 242);
 
   //$$ bread-crumbs (common)
   &__bread-crumbs {
@@ -42,38 +42,26 @@
 .holder {
   display: flex;
   justify-content: space-between;
-  
 
-  &__card {
+  .cards {
     width: 32.18%;
     height: 591px;
-    background-color: #91aa59;
-    opacity: 0.5;
     border-radius: 4px;
-  }
 
-  .card1 {
-    opacity: 0.5;
-    
-    position: relative;
+    &_foncolor_opst50 {
+      background-color: rgba(145, 170, 89, 0.5);
+      position: relative;
+    }
 
-    
-  }
+    &_foncolor_opst70 {
+      background-color: rgba(145, 170, 89, 0.7);
+      position: relative;
+    }
 
-  .card2 {
-    opacity: 0.7;
-
-    position: relative;
-
-   
-  }
-
-  .card3 {
-    opacity: 0.9;
-
-    position: relative;
-
-    
+    &_foncolor_opst90 {
+      background-color: rgba(145, 170, 89, 0.9);
+      position: relative;
+    }
   }
 
   .numberfon {
@@ -85,6 +73,99 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top:45px;
+    top: 45px;
+  }
+}
+
+//$$ text intro cards
+
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+.cards {
+
+  display: flex;
+  &__inner {
+    padding-top: 186px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+  }
+
+  &__subtitle {
+    font-family: $font-secondary;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  &__skill {
+    font-family: $font-secondary;
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-bottom: 20px;
+  }
+
+  &__price {
+    font-family: $font-common;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 28px;
+  }
+
+  .list__items {
+    font-family: $font-common;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 14px;
+  }
+
+  .list {
+    margin-bottom: 26px;
+  }
+
+  &__button {
+    background-color: transparent;
+    border: 2px solid #fff;
+    padding: 16px 62px;
+    max-width: 236px;
+    border-radius: 24px;
+    font-family: $font-common;
+    font-weight: 500;
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+    text-align: center;
+    
+    &:hover {
+      border-color: #bdcc9b;
+      color: #bdcc9b;
+      transition: color 0.2s linear, border-color 0.2s linear;
+    }
+
+    &::after {
+      content: url(../images/header/arrow.png);
+      position: absolute;
+      transform: translate(36%, -0%);
+    }
+
+    &:hover::after {
+      content: url(../images/header/arrow_hover.png);
+    }
   }
 }

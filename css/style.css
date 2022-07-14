@@ -515,14 +515,14 @@ a {
 .content-intro__button {
   background-color: transparent;
   border: 2px solid #fff;
-  padding: 16px 30px;
+  text-align: center;
+  padding: 16px 20px;
   max-width: 248px;
   border-radius: 24px;
   font-family: "SFUIText", sans-serif;
   font-weight: 500;
   color: #fff;
   font-size: 14px;
-  cursor: pointer;
   position: relative;
 }
 .content-intro__button:hover {
@@ -533,8 +533,7 @@ a {
 .content-intro__button::after {
   content: url(../images/header/arrow.png);
   position: absolute;
-  top: 50%;
-  transform: translate(16%, -40%);
+  transform: translate(16%, 10%);
 }
 .content-intro__button:hover::after {
   content: url(../images/header/arrow_hover.png);
@@ -770,6 +769,7 @@ a {
   position: relative;
   padding: 0;
   height: 833px;
+  background-color: rgb(240, 243, 242);
 }
 .timetable__bread-crumbs {
   position: absolute;
@@ -802,23 +802,21 @@ a {
   display: flex;
   justify-content: space-between;
 }
-.holder__card {
+.holder .cards {
   width: 32.18%;
   height: 591px;
-  background-color: #91aa59;
-  opacity: 0.5;
   border-radius: 4px;
 }
-.holder .card1 {
-  opacity: 0.5;
+.holder .cards_foncolor_opst50 {
+  background-color: rgba(145, 170, 89, 0.5);
   position: relative;
 }
-.holder .card2 {
-  opacity: 0.7;
+.holder .cards_foncolor_opst70 {
+  background-color: rgba(145, 170, 89, 0.7);
   position: relative;
 }
-.holder .card3 {
-  opacity: 0.9;
+.holder .cards_foncolor_opst90 {
+  background-color: rgba(145, 170, 89, 0.9);
   position: relative;
 }
 .holder .numberfon {
@@ -831,4 +829,86 @@ a {
   left: 50%;
   transform: translateX(-50%);
   top: 45px;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.cards {
+  display: flex;
+}
+.cards__inner {
+  padding-top: 186px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 auto;
+}
+.cards__subtitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.cards__skill {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 20px;
+}
+.cards__price {
+  font-family: "SFUIText", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 28px;
+}
+.cards .list__items {
+  font-family: "SFUIText", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 14px;
+}
+.cards .list {
+  margin-bottom: 26px;
+}
+.cards__button {
+  background-color: transparent;
+  border: 2px solid #fff;
+  padding: 16px 62px;
+  max-width: 236px;
+  border-radius: 24px;
+  font-family: "SFUIText", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  font-size: 18px;
+  position: relative;
+  text-align: center;
+}
+.cards__button:hover {
+  border-color: #bdcc9b;
+  color: #bdcc9b;
+  transition: color 0.2s linear, border-color 0.2s linear;
+}
+.cards__button::after {
+  content: url(../images/header/arrow.png);
+  position: absolute;
+  transform: translate(36%, 0%);
+}
+.cards__button:hover::after {
+  content: url(../images/header/arrow_hover.png);
 }
