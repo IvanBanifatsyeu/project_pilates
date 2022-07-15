@@ -1,7 +1,6 @@
 .timetable {
   position: relative;
   padding: 0;
-  height: 833px;
   background-color: rgb(240, 243, 242);
 
   //$$ bread-crumbs (common)
@@ -32,7 +31,7 @@
     background-color: rgba(0, 0, 0, 0.871);
     width: 37px;
     height: 2px;
-    transform: translateY(-15px);
+    transform: translateY(-16px);
     margin-right: 18px;
   }
 }
@@ -45,7 +44,6 @@
 
   .cards {
     width: 32.18%;
-    height: 591px;
     border-radius: 4px;
 
     &_foncolor_opst50 {
@@ -84,10 +82,9 @@
   padding-left: 0;
 }
 .cards {
-
   display: flex;
   &__inner {
-    padding-top: 186px;
+    padding: 186px 22px 94px 22px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -138,34 +135,165 @@
   .list {
     margin-bottom: 26px;
   }
+}
 
-  &__button {
+.button-arrow {
+  position: relative;
+  width: 100%;
+
+  &::after {
+    content: url(../images/timetable/arrow.png);
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding-right: 30px;
+  }
+
+  &:hover::after {
+    content: url(../images/timetable/arrow_hover.png);
+  }
+
+  &__content {
     background-color: transparent;
     border: 2px solid #fff;
-    padding: 16px 62px;
-    max-width: 236px;
+    padding: 15px 34px;
     border-radius: 24px;
     font-family: $font-common;
     font-weight: 500;
     color: #fff;
     font-size: 18px;
-    position: relative;
     text-align: center;
-    
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+
     &:hover {
-      border-color: #bdcc9b;
-      color: #bdcc9b;
+      border-color: #91aa59;
+      color: #91aa59;
       transition: color 0.2s linear, border-color 0.2s linear;
     }
+  }
+}
+
+// $$ Tablet version
+
+@media (max-width: $tablet-vers) {
+  .timetable {
+    &__bread-crumbs {
+      display: none;
+    }
+  }
+
+  .content-box3 {
+    padding: 24px 64px 116px 64px;
+
+    &__title {
+      font-size: 24px;
+      margin-bottom: 50px;
+      font-weight: 500;
+    }
+
+    &__title::before {
+      transform: translateY(-8px);
+    }
+  }
+  .holder {
+    .cards {
+      width: 32.18%;
+    }
+
+    .numberfon {
+      font-size: 114px;
+      top: 16px;
+    }
+  }
+
+  .cards {
+    &__inner {
+      padding: 100px 22px 40px 22px;
+    }
+
+    &__subtitle {
+      font-size: 12px;
+      line-height: 1;
+    }
+
+    &__skill {
+      font-size: 18px;
+      letter-spacing: 0.1em;
+      margin-bottom: 14px;
+    }
+
+    &__price {
+      font-size: 16px;
+      margin-bottom: 17px;
+    }
+
+    .list__items {
+      font-size: 16px;
+      margin-bottom: 14px;
+      letter-spacing: 0.008em;
+
+      .space {
+        display: none;
+      }
+    }
+
+    .list {
+      margin-bottom: 14px;
+    }
+  }
+
+  .button-arrow {
+    width: 84%;
 
     &::after {
-      content: url(../images/header/arrow.png);
-      position: absolute;
-      transform: translate(36%, -0%);
+      content: url(../images/timetable/Arrow-min.png);
+
+      top: 50%;
+      transform: translate(-24%, -45%);
     }
 
     &:hover::after {
-      content: url(../images/header/arrow_hover.png);
+      content: url(../images/timetable/Arrow-min_hover.png);
+    }
+
+    &__content {
+      font-size: 14px;
+      padding: 6px 8px;
+    }
+  }
+}
+
+//$$ mobile version
+
+@media (max-width: $mobile-vers) {
+  .content-box3 {
+    padding: 20px 10px 0px 15px;
+
+    &__title {
+      font-size: 18px;
+      margin-bottom: 50px;
+      letter-spacing: -0.02em;
+      margin-bottom: 30px;
+    }
+
+    &__title::before {
+      transform: translateY(-5px);
+      width: 17px;
+      height: 1px;
+      margin-right: 8px;
+    }
+  }
+
+  .holder {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 7px;
+
+    .cards {
+      width: 84%;
+      margin-bottom: 22px;
     }
   }
 }
