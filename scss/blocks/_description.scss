@@ -1,0 +1,211 @@
+.description {
+  padding: 0;
+  background-color: rgb(240, 243, 242);
+  position: relative;
+  border: 1px solid red;
+
+  //$$ bread-crumbs (common)
+  &__bread-crumbs {
+    position: absolute;
+    right: 0;
+    top: 314px;
+  }
+}
+
+//$$ grid table
+
+.grid {
+  padding: 0px 194px 0px 100px;
+  display: grid;
+  grid-template-columns: 54% 46%;
+  grid-template-rows: 607px 607px 607px 607px;
+
+  //$$ item-1
+
+  .item-1 {
+    padding-top: 22px;
+    border: 1px solid red;
+
+    &__title {
+      color: rgba(0, 0, 0, 0.871);
+      font-family: $font-secondary;
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 0.5;
+      margin-bottom: 216px;
+      display: inline-block;
+    }
+
+    &__title::before {
+      content: '';
+      display: inline-block;
+      background-color: rgba(0, 0, 0, 0.871);
+      width: 37px;
+      height: 2px;
+      transform: translateY(-11px);
+      margin-right: 16px;
+    }
+
+    .subtitle {
+      color: rgba(0, 0, 0, 0.871);
+      font-size: 28px;
+      font-family: $font-secondary;
+      font-weight: 400;
+      letter-spacing: 0.01em;
+    }
+
+    &__subtitle {
+      padding-left: 90px;
+      padding-right: 50px;
+      margin-bottom: 24px;
+    }
+
+    .paragraph {
+      color: rgba(0, 0, 0, 0.871);
+      font-size: 16px;
+      font-family: $font-common;
+      font-weight: 300;
+      letter-spacing: 0.01em;
+      line-height: 1.5;
+    }
+
+    &__paragraph {
+      padding-left: 90px;
+      padding-right: 50px;
+    }
+  }
+
+  //$$ item-2
+
+  .item-2 {
+    border: 1px solid red;
+
+    &__img {
+      position: relative;
+      left: -3px;
+      top: -3px;
+    }
+  }
+
+  //$$ item-3
+
+  .item-3 {
+    border: 1px solid red;
+
+    &__img {
+      position: relative;
+      left: 104px;
+      top: -90px;
+    }
+  }
+
+  //$$ item-4
+
+  .item-4 {
+    border: 1px solid red;
+    padding-left: 112px;
+    padding-top: 228px;
+
+    .subtitle {
+      color: rgba(0, 0, 0, 0.871);
+      font-size: 28px;
+      font-family: $font-secondary;
+      font-weight: 400;
+      letter-spacing: 0.005em;
+    }
+
+    &__subtitle {
+      margin-bottom: 20px;
+    }
+
+    .paragraph {
+      color: rgba(0, 0, 0, 0.871);
+      font-size: 16px;
+      font-family: $font-common;
+      font-weight: 300;
+      letter-spacing: 0.005em;
+      line-height: 1.5;
+    }
+  }
+
+  //$$ item-5
+
+  .item-5 {
+    border: 1px solid red;
+
+    padding: 200px 112px 20px 92px;
+    .subtitle {
+      color: rgba(0, 0, 0, 0.871);
+      font-size: 28px;
+      font-family: $font-secondary;
+      font-weight: 400;
+      letter-spacing: 0.005em;
+    }
+
+    &__subtitle {
+      margin-bottom: 20px;
+    }
+
+    .paragraph {
+      color: rgba(0, 0, 0, 0.871);
+      font-size: 16px;
+      font-family: $font-common;
+      font-weight: 300;
+      letter-spacing: 0.005em;
+      line-height: 1.5;
+    }
+  }
+
+  //$$ item-6
+
+  .item-6 {
+    &__img {
+      position: relative;
+      top: 88px;
+      left: -72px;
+    }
+    border: 1px solid red;
+  }
+
+  //$$ item-7
+
+  .item-7 {
+    border: 1px solid red;
+
+    &__img {
+      position: relative;
+      top: 50px;
+      left: 42px;
+    }
+  }
+
+  //$$ item-8
+
+  .item-8 {
+    border: 1px solid red;
+    padding-top: 194px ;
+    padding-left: 148px;
+
+
+    .subtitle {
+      color: rgba(0, 0, 0, 0.871);
+      font-size: 28px;
+      font-family: $font-secondary;
+      font-weight: 400;
+      letter-spacing: 0.005em;
+    }
+
+    &__subtitle {
+      margin-bottom: 19px;
+    }
+
+    .paragraph {
+      color: rgba(0, 0, 0, 0.871);
+      font-size: 16px;
+      font-family: $font-common;
+      font-weight: 300;
+      letter-spacing: 0.005em;
+      line-height: 1.5;
+    }
+  }
+}

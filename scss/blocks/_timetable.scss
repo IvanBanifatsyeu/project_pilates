@@ -1,7 +1,7 @@
 .timetable {
   position: relative;
   padding: 0;
-  background-color: rgb(240, 243, 242);
+  background-color: $color-background;
 
   //$$ bread-crumbs (common)
   &__bread-crumbs {
@@ -11,7 +11,7 @@
   }
 }
 
-//$$ content-box3
+//$$ title
 
 .content-box3 {
   padding: 24px 100px 116px 100px;
