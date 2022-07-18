@@ -539,11 +539,11 @@ a {
   content: url(../images/header/arrow_hover.png);
 }
 
-@media (max-width: 60px) {
+@media (max-width: 1360px) {
   .header {
     background-image: url(../images/header/background764-660.png);
     height: 660px;
-    padding: 11px 40px 0px 56px;
+    padding: 11px 60px 0px 56px;
   }
   .header__bread-crumbs {
     display: none;
@@ -559,7 +559,7 @@ a {
     margin-top: 6px;
   }
   .top-line__burger-menu {
-    margin-left: 62px;
+    margin-left: 70px;
     margin-top: 21px;
   }
   .top-line .phone {
@@ -570,11 +570,11 @@ a {
     font-size: 48px;
     margin-bottom: 44px;
   }
-  .content-intro__button, .content-intro__paragraph {
+  .content-intro__title, .content-intro__button, .content-intro__paragraph {
     margin-left: 5px;
   }
 }
-@media (max-width: 60px) {
+@media (max-width: 760px) {
   .header {
     background-image: url(/images/header/background320-481.png);
     height: 481px;
@@ -625,6 +625,7 @@ a {
   position: relative;
   padding: 110px 100px 0px 100px;
   height: 925px;
+  outline: 1px solid red;
 }
 .about__bread-crumbs {
   position: absolute;
@@ -694,7 +695,7 @@ a {
   transition: border-color 0.2s linear;
 }
 
-@media (max-width: 60px) {
+@media (max-width: 1360px) {
   .about {
     background-image: url(../../images/about/background764-552.png);
     height: 552px;
@@ -728,7 +729,7 @@ a {
     letter-spacing: 0.12em;
   }
 }
-@media (max-width: 60px) {
+@media (max-width: 760px) {
   .about {
     background-image: url(../../images/about/background320-458.png);
     height: 458px;
@@ -919,12 +920,15 @@ a {
   transition: color 0.2s linear, border-color 0.2s linear;
 }
 
-@media (max-width: 60px) {
+@media (max-width: 1360px) {
+  .timetable {
+    height: 528px;
+  }
   .timetable__bread-crumbs {
     display: none;
   }
   .content-box3 {
-    padding: 24px 64px 116px 64px;
+    padding: 24px 62px 116px 62px;
   }
   .content-box3__title {
     font-size: 24px;
@@ -932,10 +936,10 @@ a {
     font-weight: 500;
   }
   .content-box3__title::before {
-    transform: translateY(-8px);
+    transform: translateY(-7px);
   }
   .holder .cards {
-    width: 32.18%;
+    width: 32.28%;
   }
   .holder .numberfon {
     font-size: 114px;
@@ -984,7 +988,7 @@ a {
     padding: 6px 8px;
   }
 }
-@media (max-width: 60px) {
+@media (max-width: 760px) {
   .content-box3 {
     padding: 20px 10px 0px 15px;
   }
@@ -1014,7 +1018,6 @@ a {
   padding: 0;
   background-color: rgb(240, 243, 242);
   position: relative;
-  border: 1px solid red;
 }
 .description__bread-crumbs {
   position: absolute;
@@ -1030,7 +1033,6 @@ a {
 }
 .grid .item-1 {
   padding-top: 22px;
-  border: 1px solid red;
 }
 .grid .item-1__title {
   color: rgba(0, 0, 0, 0.871);
@@ -1074,24 +1076,25 @@ a {
   padding-left: 90px;
   padding-right: 50px;
 }
-.grid .item-2 {
-  border: 1px solid red;
-}
 .grid .item-2__img {
   position: relative;
+  background-image: url(../images/description/gilr_on_ball.png);
+  background-repeat: no-repeat;
+  width: 423px;
+  height: 548px;
   left: -3px;
   top: -3px;
 }
-.grid .item-3 {
-  border: 1px solid red;
-}
 .grid .item-3__img {
+  background-image: url(../images/description/girl-upside-down.png);
+  background-repeat: no-repeat;
   position: relative;
-  left: 104px;
-  top: -90px;
+  left: 106px;
+  top: -84px;
+  width: 468px;
+  height: 650px;
 }
 .grid .item-4 {
-  border: 1px solid red;
   padding-left: 112px;
   padding-top: 228px;
 }
@@ -1114,7 +1117,6 @@ a {
   line-height: 1.5;
 }
 .grid .item-5 {
-  border: 1px solid red;
   padding: 200px 112px 20px 92px;
 }
 .grid .item-5 .subtitle {
@@ -1135,24 +1137,25 @@ a {
   letter-spacing: 0.005em;
   line-height: 1.5;
 }
-.grid .item-6 {
-  border: 1px solid red;
-}
 .grid .item-6__img {
+  background-image: url(../images/description/girl-lie-on-ball.png);
+  background-repeat: no-repeat;
   position: relative;
-  top: 88px;
-  left: -72px;
-}
-.grid .item-7 {
-  border: 1px solid red;
+  left: -73px;
+  top: 90px;
+  width: 496px;
+  height: 417px;
 }
 .grid .item-7__img {
+  background-image: url(../../images/description/girl-incline.png);
+  background-repeat: no-repeat;
   position: relative;
-  top: 50px;
-  left: 42px;
+  top: 52px;
+  left: 46px;
+  width: 671px;
+  height: 482px;
 }
 .grid .item-8 {
-  border: 1px solid red;
   padding-top: 194px;
   padding-left: 148px;
 }
@@ -1173,4 +1176,130 @@ a {
   font-weight: 300;
   letter-spacing: 0.005em;
   line-height: 1.5;
+}
+
+@media (max-width: 1360px) {
+  .description {
+    height: 1416px;
+  }
+  .description__bread-crumbs {
+    display: none;
+  }
+  .description .grid {
+    border: 1px solid rgb(0, 255, 149);
+    padding: 0px 62px 0px 62px;
+    grid-template-rows: 354px 354px 354px 354px;
+  }
+  .description .grid .item-1__title {
+    font-size: 24px;
+    margin-bottom: 92px;
+  }
+  .description .grid .item-1__title::before {
+    transform: translateY(-5px);
+  }
+  .description .grid .item-1 .subtitle {
+    font-size: 18px;
+  }
+  .description .grid .item-1__subtitle {
+    padding-left: 54px;
+    margin-bottom: 26px;
+  }
+  .description .grid .item-1 .paragraph {
+    font-size: 16px;
+    position: relative;
+    width: 430px;
+    line-height: 1.2;
+  }
+  .description .grid .item-1__paragraph {
+    padding-left: 54px;
+  }
+  .description .grid .item-2__img {
+    background-image: url(../images/description/gilr_on_ball_tablet.png);
+    width: 231px;
+    height: 321px;
+    position: relative;
+    top: 10px;
+    left: 30px;
+  }
+  .description .grid .item-3__img {
+    background-image: url(../images/description/girl-upside-down-tablet.png);
+    position: relative;
+    width: 236px;
+    height: 372px;
+    top: -42px;
+    left: 45px;
+  }
+  .description .grid .item-4 {
+    padding: 116px 0px 0px 0px;
+  }
+  .description .grid .item-4 .subtitle {
+    font-size: 18px;
+  }
+  .description .grid .item-4__subtitle {
+    padding-left: 0px;
+    margin-bottom: 24px;
+  }
+  .description .grid .item-4 .paragraph {
+    font-size: 16px;
+    line-height: 1.2;
+    margin-left: -3px;
+  }
+  .description .grid .item-5 {
+    padding: 121px 50px 20px 28px;
+  }
+  .description .grid .item-5 .subtitle {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+  .description .grid .item-5 .paragraph {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+  .description .grid .item-6__img {
+    background-image: url(../images/description/girl-lie-on-ball-tablet.png);
+    position: relative;
+    width: 294px;
+    height: 239px;
+    top: 86px;
+    left: -55px;
+  }
+  .description .grid .item-7__img {
+    background-image: url(../../images/description/girl-incline-tablet.png);
+    position: relative;
+    width: 391px;
+    height: 258px;
+    top: 36px;
+    left: -32px;
+  }
+  .description .grid .item-8 {
+    padding: 84px 0px 20px 3px;
+  }
+  .description .grid .item-8 .subtitle {
+    font-size: 18px;
+    margin-bottom: 26px;
+  }
+  .description .grid .item-8 .paragraph {
+    font-size: 15.5px;
+    line-height: 1.25;
+    letter-spacing: 0.001em;
+    word-spacing: 0.001em;
+  }
+}
+.test .one {
+  background-color: blueviolet;
+  display: inline-block;
+  height: 30px;
+  width: 400px;
+}
+.test .sec {
+  background-color: rgb(1, 243, 252);
+  display: inline-block;
+  width: 364px;
+  height: 30px;
+}
+.test .tr {
+  background-color: rgb(252, 1, 1);
+  display: inline-block;
+  width: 30px;
+  height: 30px;
 }

@@ -2,7 +2,6 @@
   padding: 0;
   background-color: rgb(240, 243, 242);
   position: relative;
-  border: 1px solid red;
 
   //$$ bread-crumbs (common)
   &__bread-crumbs {
@@ -24,7 +23,6 @@
 
   .item-1 {
     padding-top: 22px;
-    border: 1px solid red;
 
     &__title {
       color: rgba(0, 0, 0, 0.871);
@@ -78,10 +76,12 @@
   //$$ item-2
 
   .item-2 {
-    border: 1px solid red;
-
     &__img {
       position: relative;
+      background-image: url(../images/description/gilr_on_ball.png);
+      background-repeat: no-repeat;
+      width: 423px;
+      height: 548px;
       left: -3px;
       top: -3px;
     }
@@ -90,19 +90,20 @@
   //$$ item-3
 
   .item-3 {
-    border: 1px solid red;
-
     &__img {
+      background-image: url(../images/description/girl-upside-down.png);
+      background-repeat: no-repeat;
       position: relative;
-      left: 104px;
-      top: -90px;
+      left: 106px;
+      top: -84px;
+      width: 468px;
+      height: 650px;
     }
   }
 
   //$$ item-4
 
   .item-4 {
-    border: 1px solid red;
     padding-left: 112px;
     padding-top: 228px;
 
@@ -131,8 +132,6 @@
   //$$ item-5
 
   .item-5 {
-    border: 1px solid red;
-
     padding: 200px 112px 20px 92px;
     .subtitle {
       color: rgba(0, 0, 0, 0.871);
@@ -160,32 +159,35 @@
 
   .item-6 {
     &__img {
+      background-image: url(../images/description/girl-lie-on-ball.png);
+      background-repeat: no-repeat;
       position: relative;
-      top: 88px;
-      left: -72px;
+      left: -73px;
+      top: 90px;
+      width: 496px;
+      height: 417px;
     }
-    border: 1px solid red;
   }
 
   //$$ item-7
 
   .item-7 {
-    border: 1px solid red;
-
     &__img {
+      background-image: url(../../images/description/girl-incline.png);
+      background-repeat: no-repeat;
       position: relative;
-      top: 50px;
-      left: 42px;
+      top: 52px;
+      left: 46px;
+      width: 671px;
+      height: 482px;
     }
   }
 
   //$$ item-8
 
   .item-8 {
-    border: 1px solid red;
-    padding-top: 194px ;
+    padding-top: 194px;
     padding-left: 148px;
-
 
     .subtitle {
       color: rgba(0, 0, 0, 0.871);
@@ -207,5 +209,165 @@
       letter-spacing: 0.005em;
       line-height: 1.5;
     }
+  }
+}
+
+// $$ Tablet version
+
+@media (max-width: $tablet-vers) {
+  .description {
+    height: 1416px;
+
+    &__bread-crumbs {
+      display: none;
+    }
+
+    .grid {
+      border: 1px solid rgb(0, 255, 149);
+      padding: 0px 62px 0px 62px;
+      grid-template-rows: 354px 354px 354px 354px;
+
+      .item-1 {
+        &__title {
+          font-size: 24px;
+          margin-bottom: 92px;
+        }
+
+        &__title::before {
+          transform: translateY(-5px);
+        }
+
+        .subtitle {
+          font-size: 18px;
+        }
+
+        &__subtitle {
+          padding-left: 54px;
+          margin-bottom: 26px;
+        }
+
+        .paragraph {
+          font-size: 16px;
+          position: relative;
+          width: 430px;
+          line-height: 1.2;
+        }
+
+        &__paragraph {
+          padding-left: 54px;
+        }
+      }
+
+      .item-2 {
+        &__img {
+          background-image: url(../images/description/gilr_on_ball_tablet.png);
+          width: 231px;
+          height: 321px;
+          position: relative;
+          top: 10px;
+          left: 30px;
+        }
+      }
+
+      .item-3 {
+        &__img {
+          background-image: url(../images/description/girl-upside-down-tablet.png);
+          position: relative;
+          width: 236px;
+          height: 372px;
+          top: -42px;
+          left: 45px;
+        }
+      }
+
+      .item-4 {
+        padding: 116px 0px 0px 0px;
+        .subtitle {
+          font-size: 18px;
+        }
+
+        &__subtitle {
+          padding-left: 0px;
+          margin-bottom: 24px;
+        }
+
+        .paragraph {
+          font-size: 16px;
+          line-height: 1.2;
+          margin-left: -3px;
+        }
+      }
+
+      .item-5 {
+        padding: 121px 50px 20px 28px;
+        .subtitle {
+          font-size: 18px;
+          margin-bottom: 24px;
+        }
+        .paragraph {
+          font-size: 16px;
+          line-height: 1.2;
+        }
+      }
+
+      .item-6 {
+        &__img {
+          background-image: url(../images/description/girl-lie-on-ball-tablet.png);
+          position: relative;
+          width: 294px;
+          height: 239px;
+          top: 86px;
+          left: -55px;
+        }
+      }
+
+      .item-7 {
+        &__img {
+          background-image: url(../../images/description/girl-incline-tablet.png);
+          position: relative;
+          width: 391px;
+          height: 258px;
+          top: 36px;
+          left: -32px;
+        }
+      }
+
+      .item-8 {
+        padding: 84px 0px 20px 3px;
+        .subtitle {
+          font-size: 18px;
+          margin-bottom: 26px;
+        }
+        .paragraph {
+          font-size: 15.5px;
+          line-height: 1.25;
+          letter-spacing: 0.001em;
+          word-spacing: 0.001em ;
+        }
+      }
+    }
+  }
+}
+
+.test {
+  .one {
+    background-color: blueviolet;
+    display: inline-block;
+    height: 30px;
+    width: 400px;
+  }
+
+  .sec {
+    background-color: rgb(1, 243, 252);
+    display: inline-block;
+    width: 364px;
+    height: 30px;
+  }
+
+  .tr {
+    background-color: rgb(252, 1, 1);
+    display: inline-block;
+    width: 30px;
+    height: 30px;
   }
 }

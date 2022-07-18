@@ -5,7 +5,10 @@
   background-position: $background-position;
   position: relative;
   padding: 28px 100px 0px 100px;
+
   height: 786px;
+
+  //aspect-ratio: 1.738 ;
 }
 
 //$$ bread-crumbs (common)
@@ -110,7 +113,7 @@
   &__button::after {
     content: url(../images/header/arrow.png);
     position: absolute;
-    
+
     transform: translate(16%, 10%);
   }
 
@@ -125,7 +128,7 @@
   .header {
     background-image: url(../images/header/background764-660.png);
     height: 660px;
-    padding: 11px 40px 0px 56px;
+    padding: 11px 60px 0px 56px;
   }
 
   .header__bread-crumbs {
@@ -145,7 +148,7 @@
     }
 
     &__burger-menu {
-      margin-left: 62px;
+      margin-left: 70px;
       margin-top: 21px;
     }
 
@@ -161,6 +164,7 @@
       margin-bottom: 44px;
     }
 
+    &__title,
     &__button,
     &__paragraph {
       margin-left: 5px;

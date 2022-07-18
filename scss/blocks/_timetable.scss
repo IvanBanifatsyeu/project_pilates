@@ -179,13 +179,17 @@
 
 @media (max-width: $tablet-vers) {
   .timetable {
+    height: 528px;
+
+
     &__bread-crumbs {
       display: none;
     }
   }
 
   .content-box3 {
-    padding: 24px 64px 116px 64px;
+    padding: 24px 62px 116px 62px;
+    
 
     &__title {
       font-size: 24px;
@@ -194,12 +198,12 @@
     }
 
     &__title::before {
-      transform: translateY(-8px);
+      transform: translateY(-7px);
     }
   }
   .holder {
     .cards {
-      width: 32.18%;
+      width: 32.28%;
     }
 
     .numberfon {
