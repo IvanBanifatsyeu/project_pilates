@@ -1,6 +1,6 @@
 .description {
   padding: 0;
-  background-color: rgb(240, 243, 242);
+
   position: relative;
 
   //$$ bread-crumbs (common)
@@ -223,7 +223,6 @@
     }
 
     .grid {
-      border: 1px solid rgb(0, 255, 149);
       padding: 0px 62px 0px 62px;
       grid-template-rows: 354px 354px 354px 354px;
 
@@ -235,10 +234,6 @@
 
         &__title::before {
           transform: translateY(-5px);
-        }
-
-        .subtitle {
-          font-size: 18px;
         }
 
         &__subtitle {
@@ -342,32 +337,210 @@
           font-size: 15.5px;
           line-height: 1.25;
           letter-spacing: 0.001em;
-          word-spacing: 0.001em ;
+          word-spacing: 0.001em;
         }
       }
     }
   }
 }
 
-.test {
-  .one {
-    background-color: blueviolet;
-    display: inline-block;
-    height: 30px;
-    width: 400px;
-  }
+//$$ mobile version
 
-  .sec {
-    background-color: rgb(1, 243, 252);
-    display: inline-block;
-    width: 364px;
-    height: 30px;
-  }
+@media (max-width: $mobile-vers) {
+  .description {
+    overflow: hidden;
+    height: 1800px;
 
-  .tr {
-    background-color: rgb(252, 1, 1);
-    display: inline-block;
-    width: 30px;
-    height: 30px;
+    padding: 0;
+    .grid {
+      padding: 0;
+      grid-template-columns: 100%;
+      grid-template-rows: 450px 450px 450px 450px;
+
+      .item-1 {
+        position: relative;
+        padding: 0;
+        //display: inline-block;
+
+        &__title {
+          font-size: 18px;
+          margin-bottom: 28px;
+          letter-spacing: -0.03em;
+          padding-left: 4%;
+          padding-top: 19px;
+        }
+
+        &__title::before {
+          width: 18px;
+          height: 1px;
+          margin-right: 8px;
+          transform: translateY(-6px);
+        }
+
+        .subtitle {
+          font-size: 14px;
+        }
+
+        &__subtitle {
+          padding-top: 11px;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          padding: 0;
+        }
+
+        .paragraph {
+          position: absolute;
+          padding: 0;
+          font-size: 14px;
+          top: 350px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 280px;
+          text-align: center;
+        }
+      }
+
+      .item-2 {
+        padding: 0;
+        top: 88px;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+
+        &__img {
+          background-image: url(../images/description/gilr_on_ball_mobile.png);
+          top: 0px;
+          left: 0px;
+          height: 256px;
+          width: 203px;
+        }
+      }
+
+      .item-3 {
+        position: absolute;
+        top: 446px;
+        left: 50%;
+        transform: translateX(-53%);
+        padding: 0;
+
+        &__img {
+          background-image: url(../images/description/girl-upside-down-mobile.png);
+          top: 0px;
+          left: 0px;
+          height: 336px;
+          width: 234px;
+        }
+      }
+
+      .item-4 {
+        padding: 0;
+
+        .subtitle {
+          font-size: 14px;
+        }
+
+        &__subtitle {
+          position: absolute;
+          top: 490px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+
+        .paragraph {
+          position: absolute;
+          font-size: 14px;
+          top: 798px;
+          left: 52%;
+          transform: translateX(-50%);
+          text-align: center;
+          width: 280px;
+        }
+      }
+
+      .item-5 {
+        padding: 0;
+
+        .subtitle {
+          font-size: 14px;
+        }
+
+        &__subtitle {
+          position: absolute;
+          top: 938px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+
+        .paragraph {
+          position: absolute;
+          font-size: 14px;
+          top: 1256px;
+          left: 50%;
+          transform: translateX(-46%);
+          text-align: center;
+
+          width: 280px;
+        }
+      }
+
+      .item-6 {
+        position: absolute;
+        top: 1004px;
+        left: 50%;
+        transform: translateX(-53%);
+        padding: 0;
+
+        &__img {
+          background-image: url(../images/description/girl-lie-on-ball-mobile.png);
+          top: 0px;
+          left: 0px;
+          height: 226px;
+          width: 259px;
+        }
+      }
+
+      .item-7 {
+        position: absolute;
+        top: 1454px;
+        left: 50%;
+        transform: translateX(-49%);
+        padding: 0;
+
+        &__img {
+          background-image: url(../images/description/girl-incline-mobile.png);
+          top: 0px;
+          left: 0px;
+          height: 226px;
+          width: 327px;
+        }
+      }
+
+      .item-8 {
+        padding: 0;
+
+        .subtitle {
+          font-size: 14px;
+        }
+
+        &__subtitle {
+          position: absolute;
+          top: 1382px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+
+        .paragraph {
+          position: absolute;
+          font-size: 14px;
+          top: 1701px;
+          left: 50%;
+          transform: translateX(-50%);
+          text-align: center;
+
+          width: 290px;
+        }
+      }
+    }
   }
 }

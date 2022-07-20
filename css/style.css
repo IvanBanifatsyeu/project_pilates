@@ -439,7 +439,7 @@ a {
   background-image: url(../images/header/background1366-786.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 0% 0%;
+  background-position: center;
   position: relative;
   padding: 28px 100px 0px 100px;
   height: 786px;
@@ -576,7 +576,7 @@ a {
 }
 @media (max-width: 760px) {
   .header {
-    background-image: url(/images/header/background320-481.png);
+    background-image: url(../images/header/background320-481.png);
     height: 481px;
     padding: 0px;
   }
@@ -621,11 +621,10 @@ a {
   background-image: url(../images/about/background1366-925.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 0% 0%;
+  background-position: center;
   position: relative;
   padding: 110px 100px 0px 100px;
   height: 925px;
-  outline: 1px solid red;
 }
 .about__bread-crumbs {
   position: absolute;
@@ -697,7 +696,7 @@ a {
 
 @media (max-width: 1360px) {
   .about {
-    background-image: url(../../images/about/background764-552.png);
+    background-image: url(../images/about/background764-552.png);
     height: 552px;
     padding: 92px 620px 0px 62px;
   }
@@ -731,7 +730,7 @@ a {
 }
 @media (max-width: 760px) {
   .about {
-    background-image: url(../../images/about/background320-458.png);
+    background-image: url(../images/about/background320-458.png);
     height: 458px;
     padding: 48px 0 0 14px;
   }
@@ -989,8 +988,11 @@ a {
   }
 }
 @media (max-width: 760px) {
+  .timetable {
+    height: 1245px;
+  }
   .content-box3 {
-    padding: 20px 10px 0px 15px;
+    padding: 20px 14px 0px 15px;
   }
   .content-box3__title {
     font-size: 18px;
@@ -1016,7 +1018,6 @@ a {
 }
 .description {
   padding: 0;
-  background-color: rgb(240, 243, 242);
   position: relative;
 }
 .description__bread-crumbs {
@@ -1186,7 +1187,6 @@ a {
     display: none;
   }
   .description .grid {
-    border: 1px solid rgb(0, 255, 149);
     padding: 0px 62px 0px 62px;
     grid-template-rows: 354px 354px 354px 354px;
   }
@@ -1196,9 +1196,6 @@ a {
   }
   .description .grid .item-1__title::before {
     transform: translateY(-5px);
-  }
-  .description .grid .item-1 .subtitle {
-    font-size: 18px;
   }
   .description .grid .item-1__subtitle {
     padding-left: 54px;
@@ -1285,21 +1282,171 @@ a {
     word-spacing: 0.001em;
   }
 }
-.test .one {
-  background-color: blueviolet;
-  display: inline-block;
-  height: 30px;
-  width: 400px;
-}
-.test .sec {
-  background-color: rgb(1, 243, 252);
-  display: inline-block;
-  width: 364px;
-  height: 30px;
-}
-.test .tr {
-  background-color: rgb(252, 1, 1);
-  display: inline-block;
-  width: 30px;
-  height: 30px;
+@media (max-width: 760px) {
+  .description {
+    overflow: hidden;
+    height: 1800px;
+    padding: 0;
+  }
+  .description .grid {
+    padding: 0;
+    grid-template-columns: 100%;
+    grid-template-rows: 450px 450px 450px 450px;
+  }
+  .description .grid .item-1 {
+    position: relative;
+    padding: 0;
+  }
+  .description .grid .item-1__title {
+    font-size: 18px;
+    margin-bottom: 28px;
+    letter-spacing: -0.03em;
+    padding-left: 4%;
+    padding-top: 19px;
+  }
+  .description .grid .item-1__title::before {
+    width: 18px;
+    height: 1px;
+    margin-right: 8px;
+    transform: translateY(-6px);
+  }
+  .description .grid .item-1 .subtitle {
+    font-size: 14px;
+  }
+  .description .grid .item-1__subtitle {
+    padding-top: 11px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+  }
+  .description .grid .item-1 .paragraph {
+    position: absolute;
+    padding: 0;
+    font-size: 14px;
+    top: 350px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 280px;
+    text-align: center;
+  }
+  .description .grid .item-2 {
+    padding: 0;
+    top: 88px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+  }
+  .description .grid .item-2__img {
+    background-image: url(../images/description/gilr_on_ball_mobile.png);
+    top: 0px;
+    left: 0px;
+    height: 256px;
+    width: 203px;
+  }
+  .description .grid .item-3 {
+    position: absolute;
+    top: 446px;
+    left: 50%;
+    transform: translateX(-53%);
+    padding: 0;
+  }
+  .description .grid .item-3__img {
+    background-image: url(../images/description/girl-upside-down-mobile.png);
+    top: 0px;
+    left: 0px;
+    height: 336px;
+    width: 234px;
+  }
+  .description .grid .item-4 {
+    padding: 0;
+  }
+  .description .grid .item-4 .subtitle {
+    font-size: 14px;
+  }
+  .description .grid .item-4__subtitle {
+    position: absolute;
+    top: 490px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .description .grid .item-4 .paragraph {
+    position: absolute;
+    font-size: 14px;
+    top: 798px;
+    left: 52%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 280px;
+  }
+  .description .grid .item-5 {
+    padding: 0;
+  }
+  .description .grid .item-5 .subtitle {
+    font-size: 14px;
+  }
+  .description .grid .item-5__subtitle {
+    position: absolute;
+    top: 938px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .description .grid .item-5 .paragraph {
+    position: absolute;
+    font-size: 14px;
+    top: 1256px;
+    left: 50%;
+    transform: translateX(-46%);
+    text-align: center;
+    width: 280px;
+  }
+  .description .grid .item-6 {
+    position: absolute;
+    top: 1004px;
+    left: 50%;
+    transform: translateX(-53%);
+    padding: 0;
+  }
+  .description .grid .item-6__img {
+    background-image: url(../images/description/girl-lie-on-ball-mobile.png);
+    top: 0px;
+    left: 0px;
+    height: 226px;
+    width: 259px;
+  }
+  .description .grid .item-7 {
+    position: absolute;
+    top: 1454px;
+    left: 50%;
+    transform: translateX(-49%);
+    padding: 0;
+  }
+  .description .grid .item-7__img {
+    background-image: url(../images/description/girl-incline-mobile.png);
+    top: 0px;
+    left: 0px;
+    height: 226px;
+    width: 327px;
+  }
+  .description .grid .item-8 {
+    padding: 0;
+  }
+  .description .grid .item-8 .subtitle {
+    font-size: 14px;
+  }
+  .description .grid .item-8__subtitle {
+    position: absolute;
+    top: 1382px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .description .grid .item-8 .paragraph {
+    position: absolute;
+    font-size: 14px;
+    top: 1701px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 290px;
+  }
 }

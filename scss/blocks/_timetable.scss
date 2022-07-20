@@ -272,8 +272,13 @@
 //$$ mobile version
 
 @media (max-width: $mobile-vers) {
+  .timetable {
+    height: 1245px;
+  }
+
+
   .content-box3 {
-    padding: 20px 10px 0px 15px;
+    padding: 20px 14px 0px 15px;
 
     &__title {
       font-size: 18px;

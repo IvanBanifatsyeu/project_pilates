@@ -6,7 +6,6 @@
   position: relative;
   padding: 110px 100px 0px 100px;
   height: 925px;
-  outline: 1px solid red;
 
   //$$ bread-crumbs (common)
   &__bread-crumbs {
@@ -20,8 +19,6 @@
 
 .content-box2 {
   max-width: 390px;
-
-  
 
   &__title {
     color: rgba(0, 0, 0, 0.871);
@@ -95,7 +92,7 @@
 
 @media (max-width: $tablet-vers) {
   .about {
-    background-image: url(../../images/about/background764-552.png);
+    background-image: url(../images/about/background764-552.png);
     height: 552px;
     padding: 92px 620px 0px 62px;
 
@@ -138,7 +135,7 @@
 
 @media (max-width: $mobile-vers) {
   .about {
-    background-image: url(../../images/about/background320-458.png);
+    background-image: url(../images/about/background320-458.png);
     height: 458px;
     padding: 48px 0 0 14px;
   }
@@ -149,7 +146,6 @@
       font-size: 18px;
       margin-bottom: 30px;
       font-weight: 500;
-      
     }
 
     &__title::before {
@@ -175,9 +171,8 @@
 
       &::after {
         width: 6px;
-      height: 6px;
+        height: 6px;
       }
     }
   }
 }
-
