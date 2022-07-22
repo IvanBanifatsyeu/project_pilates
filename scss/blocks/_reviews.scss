@@ -151,7 +151,7 @@
     background-repeat: no-repeat;
     background-position: 92% 18%;
     display: flex;
-    //align-items: center;
+
     justify-content: center;
   }
 
@@ -179,9 +179,7 @@
   }
 
   &__social {
-    width: 130px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin-bottom: 14px;
   }
@@ -191,18 +189,21 @@
     font-family: $font-secondary;
     color: rgba(0, 0, 0, 0.871);
     line-height: 1.2;
+    margin-right: 16px;
   }
 
   &__social-icon-vk {
     width: 27px;
     height: 27px;
     opacity: 0.5;
+    margin-right: 16px;
   }
 
   &__social-icon-instagram {
     width: 17px;
     height: 17px;
     opacity: 0.5;
+    margin-right: 16px;
   }
 
   &__about-me {
@@ -272,39 +273,48 @@
       height: 220px;
       background-image: url(../images/reviews/points-tablet.png);
       background-position: 96% 18%;
+      padding-right: 24px;
+    }
+
+    &__cover-foto {
+      width: 94px;
+      height: 94px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-top: 66px;
+      margin-right: 30px;
     }
 
     &__foto {
       width: 98px;
       height: 94px;
-      margin-top: 65px;
-      margin-left: 12px;
-      margin-right: 0px;
+      margin: 0;
+      transform: scale(1.2);
     }
 
     &__content {
       max-width: 60%;
       margin-top: 28px;
-      margin-left: 4px;
     }
 
     &__name {
       font-size: 18px;
-      margin-bottom: 7px;
+      margin-bottom: 6px;
     }
 
     &__social {
-      width: 40%;
-      margin-bottom: 9px;
+      margin-bottom: 10px;
     }
 
     &__age {
       font-size: 14px;
+      margin-right: 24px;
     }
 
     &__social-icon-vk {
       width: 20px;
       height: 20px;
+      margin-right: 18px;
     }
 
     &__social-icon-instagram {
@@ -313,11 +323,95 @@
     }
 
     &__about-me {
-      line-height: 1.20;
+      line-height: 1.2;
+    }
+
+    &__about-me-break {
+      display: none;
     }
 
     &__about-me_hidden-tablet {
       display: none;
+    }
+  }
+}
+
+//$$ mobile version
+
+@media (max-width: $mobile-vers) {
+  .reviews {
+    padding: 24px 16px 20px 14px;
+
+    &__title {
+      margin-bottom: 32px;
+    }
+  }
+
+  .title {
+    font-size: 18px;
+    letter-spacing: -0.04em;
+
+    &::before {
+      width: 18px;
+      height: 1px;
+      margin-right: 9px;
+    }
+  }
+
+  .slider {
+    padding: 0 0 36px 0;
+
+    &__button-right {
+      display: none;
+    }
+
+    &__button-left {
+      display: none;
+    }
+
+    &__card {
+      flex-direction: column;
+      align-items: center;
+      height: 322px;
+      background-image: none;
+      justify-content: start;
+      padding: 0;
+    }
+
+    &__cover-foto {
+      margin: 40px 12px 16px 0;
+      padding: 0;
+    }
+
+    &__foto {
+      padding: 0;
+      margin: 0;
+      transform: translateX(0);
+      transform: scale(1.2);
+    }
+
+    &__content {
+      max-width: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+    }
+
+    &__name {
+      font-size: 16px;
+      margin: 0 10px 6px 0;
+    }
+
+    &__social {
+      margin: 0 0 19px 0;
+    }
+
+    &__about-me {
+      font-style: 14px;
+      text-align: center;
+      letter-spacing: -0.08em;
+      line-height: 1.1;
     }
   }
 }
