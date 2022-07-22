@@ -1,0 +1,323 @@
+.reviews {
+  background-color: $color-background;
+  padding: 26px 102px 115px 100px;
+  position: relative;
+
+  //$$ bread-crumbs (common)
+
+  &__bread-crumbs {
+    position: absolute;
+    right: 0;
+    top: 216px;
+  }
+
+  &__title {
+    margin-bottom: 70px;
+  }
+}
+
+//$$ title
+
+.title {
+  color: rgba(0, 0, 0, 0.871);
+  font-family: $font-secondary;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 0.5;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.871);
+    width: 37px;
+    height: 2px;
+    transform: translateY(-0.3em);
+    margin-right: 19px;
+  }
+}
+
+//$$ slider
+
+.slider {
+  padding: 0px 92px 67px 95px;
+  position: relative;
+
+  &__button-right {
+    width: 26px;
+    height: 26px;
+    border-top: 2px solid #c7d4ab;
+    border-right: 2px solid #c7d4ab;
+    border-left: transparent;
+    border-bottom: transparent;
+    background-color: transparent;
+    transform: translateX(-21%) rotate(45deg);
+    position: absolute;
+    top: 44.5%;
+    right: 0px;
+    cursor: pointer;
+
+    &:hover {
+      border-top: 3px solid #7da12e;
+      border-right: 3px solid #7da12e;
+    }
+  }
+
+  &__button-left {
+    width: 26px;
+    height: 26px;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: 2px solid #c7d4ab;
+    border-bottom: 2px solid #c7d4ab;
+    background-color: transparent;
+    transform: translateX(21%) rotate(45deg);
+    position: absolute;
+    top: 44.5%;
+    left: 0px;
+    cursor: pointer;
+
+    &:hover {
+      border-left: 3px solid #7da12e;
+      border-bottom: 3px solid #7da12e;
+    }
+  }
+
+  &__bread-crumbs {
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transform: translateX(-50%);
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    height: 20px;
+    align-items: center;
+  }
+
+  &__item {
+    padding: 0;
+    line-height: 0;
+    margin-right: 26px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__bread-crumbs-button {
+    border-radius: 50%;
+    background-color: rgb(145, 170, 89);
+    opacity: 0.502;
+    width: 10px;
+    height: 10px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    padding: 0px;
+
+    &:hover {
+      background-color: rgb(145, 170, 89);
+      transform: scale(1.2);
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -35%;
+      left: -25%;
+      width: 150%;
+      height: 150%;
+    }
+
+    &_active {
+      width: 15px;
+      height: 15px;
+      opacity: 1;
+    }
+  }
+
+  //$$card
+
+  &__card {
+    width: 977px;
+    height: 394px;
+    box-shadow: 0px 9px 22.72px 9.28px rgba(33, 33, 33, 0.04);
+    border-radius: 4px;
+    background-color: #fff;
+    background-image: url(../images/reviews/points.png);
+    background-repeat: no-repeat;
+    background-position: 92% 18%;
+    display: flex;
+    //align-items: center;
+    justify-content: center;
+  }
+
+  &__foto {
+    width: 185px;
+    height: 178px;
+    margin-top: 110px;
+    transform: translateX(-25px);
+    margin-right: 30px;
+  }
+
+  &__content {
+    max-width: 430px;
+    margin-top: 90px;
+  }
+
+  &__name {
+    font-family: $font-secondary;
+    font-size: 28px;
+    color: rgba(0, 0, 0, 0.871);
+    line-height: 1.2;
+    font-weight: 400;
+    margin-bottom: 5px;
+    letter-spacing: 0.005em;
+  }
+
+  &__social {
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+  }
+
+  &__age {
+    font-size: 18px;
+    font-family: $font-secondary;
+    color: rgba(0, 0, 0, 0.871);
+    line-height: 1.2;
+  }
+
+  &__social-icon-vk {
+    width: 27px;
+    height: 27px;
+    opacity: 0.5;
+  }
+
+  &__social-icon-instagram {
+    width: 17px;
+    height: 17px;
+    opacity: 0.5;
+  }
+
+  &__about-me {
+    font-size: 16px;
+    font-family: $font-common;
+    color: #000;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+  }
+}
+
+//$$ tablet version
+
+@media (max-width: $tablet-vers) {
+  .reviews {
+    padding: 21px 60px 70px 60px;
+
+    &__bread-crumbs {
+      display: none;
+    }
+
+    &__title {
+      margin-bottom: 40px;
+    }
+  }
+
+  .title {
+    font-size: 24.5px;
+  }
+
+  .slider {
+    padding: 0px 10% 32px 10%;
+
+    &__button-right {
+      width: 18px;
+      height: 18px;
+      top: 33%;
+    }
+
+    &__button-left {
+      width: 18px;
+      height: 18px;
+      top: 33%;
+    }
+
+    &__list {
+      height: 16px;
+    }
+
+    &__item {
+      margin-right: 12px;
+    }
+
+    &__bread-crumbs-button {
+      width: 6px;
+      height: 6px;
+
+      &_active {
+        width: 9px;
+        height: 9px;
+        opacity: 1;
+      }
+    }
+
+    &__card {
+      width: 100%;
+      height: 220px;
+      background-image: url(../images/reviews/points-tablet.png);
+      background-position: 96% 18%;
+    }
+
+    &__foto {
+      width: 98px;
+      height: 94px;
+      margin-top: 65px;
+      margin-left: 12px;
+      margin-right: 0px;
+    }
+
+    &__content {
+      max-width: 60%;
+      margin-top: 28px;
+      margin-left: 4px;
+    }
+
+    &__name {
+      font-size: 18px;
+      margin-bottom: 7px;
+    }
+
+    &__social {
+      width: 40%;
+      margin-bottom: 9px;
+    }
+
+    &__age {
+      font-size: 14px;
+    }
+
+    &__social-icon-vk {
+      width: 20px;
+      height: 20px;
+    }
+
+    &__social-icon-instagram {
+      width: 15px;
+      height: 15px;
+    }
+
+    &__about-me {
+      line-height: 1.20;
+    }
+
+    &__about-me_hidden-tablet {
+      display: none;
+    }
+  }
+}
