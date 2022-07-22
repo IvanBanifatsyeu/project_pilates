@@ -541,7 +541,9 @@ a {
 
 @media (max-width: 1360px) {
   .header {
-    background-image: url(../images/header/background764-660.png);
+    background-image: url(../images/header/girl-764.png), url(../images/header/background764-660.png);
+    background-size: 540px 609px, cover;
+    background-position: bottom 20px right 5%, center;
     height: 660px;
     padding: 11px 60px 0px 56px;
   }
@@ -576,7 +578,9 @@ a {
 }
 @media (max-width: 760px) {
   .header {
-    background-image: url(../images/header/background320-481.png);
+    background-image: url(../images/header/girl-320.png), url(../images/header/background320-481.png);
+    background-size: 287px 318px, cover;
+    background-position: bottom 20px left 80%, center;
     height: 481px;
     padding: 0px;
   }
@@ -598,7 +602,7 @@ a {
   }
   .header__content-intro {
     width: 300px;
-    padding-left: 15px;
+    padding-left: 5%;
   }
   .content-intro__title {
     font-size: 30px;
