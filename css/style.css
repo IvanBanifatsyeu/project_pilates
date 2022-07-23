@@ -579,8 +579,8 @@ a {
 @media (max-width: 760px) {
   .header {
     background-image: url(../images/header/girl-320.png), url(../images/header/background320-481.png);
-    background-size: 287px 318px, cover;
-    background-position: bottom 20px left 80%, center;
+    background-size: auto 80%, cover;
+    background-position: bottom 20px left 70%, center;
     height: 481px;
     padding: 0px;
   }
@@ -701,7 +701,9 @@ a {
 
 @media (max-width: 1360px) {
   .about {
-    background-image: url(../images/about/background764-552.png);
+    background-image: url(../images/about/background764-552_885_630.png);
+    background-size: 54% auto;
+    background-position: 82% 70%;
     height: 552px;
     padding: 92px 620px 0px 62px;
   }
@@ -735,7 +737,7 @@ a {
 }
 @media (max-width: 760px) {
   .about {
-    background-image: url(../images/about/background320-458.png);
+    background-image: url(../images/about/background320-458_417-307.png);
     height: 458px;
     padding: 48px 0 0 14px;
   }

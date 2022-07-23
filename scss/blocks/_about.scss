@@ -93,7 +93,9 @@
 
 @media (max-width: $tablet-vers) {
   .about {
-    background-image: url(../images/about/background764-552.png);
+    background-image: url(../images/about/background764-552_885_630.png);
+    background-size: 54%  auto ;
+    background-position: 82% 70%;
     height: 552px;
     padding: 92px 620px 0px 62px;
 
@@ -136,7 +138,7 @@
 
 @media (max-width: $mobile-vers) {
   .about {
-    background-image: url(../images/about/background320-458.png);
+    background-image: url(../images/about/background320-458_417-307.png);
     height: 458px;
     padding: 48px 0 0 14px;
   }

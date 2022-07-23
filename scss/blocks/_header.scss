@@ -183,8 +183,8 @@
     background-image: url(../images/header/girl-320.png),
       url(../images/header/background320-481.png);
 
-    background-size: 287px 318px, $background-size;
-    background-position: bottom 20px left 80%, center;
+    background-size: auto 80%, $background-size;
+    background-position: bottom 20px left 70%, center;
     height: 481px;
     padding: 0px;
   }
