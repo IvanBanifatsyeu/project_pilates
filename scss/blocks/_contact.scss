@@ -1,0 +1,159 @@
+.contact {
+  padding: 0;
+  background-color: $color-background;
+
+  &__title-wrapper {
+    padding: 22px 100px 70px 100px;
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__map {
+    height: 513px;
+    padding: 0;
+    background-image: url(../images/contact/map_1366-513.png);
+  }
+
+  &__sticker-list {
+    position: absolute;
+    background-color: rgb(145, 170, 89);
+    box-shadow: 0px 6px 15px 0px rgba(33, 33, 33, 0.2);
+    left: 7.3%;
+    width: 310px;
+    height: 355px;
+    padding: 58px 70px 40px 70px;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    font-family: $font-common;
+    color: rgba(255, 255, 255, 0.871);
+    line-height: 1.5;
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+
+  &__paragraph,
+  &__telephone,
+  &__e-mail {
+    font-size: 16px;
+    font-family: $font-common;
+    color: rgba(255, 255, 255, 0.871);
+    line-height: 1.5;
+    font-weight: 300;
+  }
+
+  &__paragraph {
+    margin-bottom: 18px;
+  }
+
+  &__telephone {
+    display: inline-block;
+    margin-bottom: 19px;
+  }
+}
+
+.title {
+  color: rgba(0, 0, 0, 0.871);
+  font-family: $font-secondary;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 0.5;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.871);
+    width: 37px;
+    height: 2px;
+    transform: translateY(-0.3em);
+    margin-right: 19px;
+  }
+}
+
+//$$ tablet version
+
+@media (max-width: $tablet-vers) {
+  .title {
+    font-size: 24px;
+  }
+  .contact {
+    &__title-wrapper {
+      padding: 20px 60px 32px 60px;
+    }
+
+    &__map {
+      background-size: cover;
+      background-position: center;
+      height: 358px;
+    }
+
+    &__sticker-list {
+      width: 247px;
+      height: 284px;
+      padding: 26px 34px 40px 34px;
+      left: 6.5%;
+    }
+
+    &__subtitle {
+      font-style: 18px;
+    }
+  }
+}
+
+//$$ mobile version
+
+@media (max-width: $mobile-vers) {
+  .title {
+    font-size: 18px;
+    &::before {
+      width: 17px;
+      height: 1px;
+      margin-right: 9px;
+    }
+  }
+
+  .contact {
+    &__title-wrapper {
+      padding: 46px 100px 14px 14px;
+    }
+
+    &__container {
+      position: static;
+    }
+
+    &__sticker-list {
+      position: static;
+      background-color: inherit;
+      box-shadow: none;
+      width: 100%;
+      padding: 11px 30px 42px 11%;
+      height:auto ;
+  
+    }
+
+    &__subtitle {
+      color: rgba(0, 0, 0, 0.871);
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    &__paragraph,
+    &__telephone,
+    &__e-mail {
+      color: rgba(0, 0, 0, 0.871);
+      font-size: 14px;
+    }
+
+    &__paragraph {
+      margin-bottom: 18px;
+      line-height: 1.2;
+    }
+
+    &__telephone {
+      margin-bottom: 6px;
+    }
+  }
+}
