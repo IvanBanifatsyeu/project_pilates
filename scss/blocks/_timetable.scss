@@ -138,40 +138,42 @@
 }
 
 .button-arrow {
-  position: relative;
+  background-color: transparent;
+  border: 2px solid #fff;
+  padding: 15px 34px;
+  border-radius: 24px;
+  font-family: $font-common;
+  font-weight: 500;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  display: inline-block;
   width: 100%;
+  cursor: pointer;
+  position: relative;
+  transition: outline 0.2s linear, border-color 0.2s linear;
+
+  &:hover {
+    border-color: #757575;
+    outline: 1px solid #757575;
+  }
 
   &::after {
-    content: url(../images/timetable/arrow.png);
+    content: '';
     position: absolute;
+    display: block;
+    background-image: url(../images/timetable/arrow.png);
+    width: 72px;
+    height: 12px;
+    background-repeat: no-repeat;
+    right: 0;
     top: 50%;
-    transform: translate(-50%, -50%);
-    padding-right: 30px;
+    transform: translate(40px, -50%);
+    transition: transform 0.2s linear;
   }
 
   &:hover::after {
-    content: url(../images/timetable/arrow_hover.png);
-  }
-
-  &__content {
-    background-color: transparent;
-    border: 2px solid #fff;
-    padding: 15px 34px;
-    border-radius: 24px;
-    font-family: $font-common;
-    font-weight: 500;
-    color: #fff;
-    font-size: 18px;
-    text-align: center;
-    display: inline-block;
-    width: 100%;
-    cursor: pointer;
-
-    &:hover {
-      border-color: #91aa59;
-      color: #91aa59;
-      transition: color 0.2s linear, border-color 0.2s linear;
-    }
+    transform: translate(50px, -50%);
   }
 }
 
@@ -181,7 +183,6 @@
   .timetable {
     height: 528px;
 
-
     &__bread-crumbs {
       display: none;
     }
@@ -189,7 +190,6 @@
 
   .content-box3 {
     padding: 24px 62px 116px 62px;
-    
 
     &__title {
       font-size: 24px;
@@ -250,21 +250,18 @@
 
   .button-arrow {
     width: 84%;
+    font-size: 14px;
+    padding: 6px 8px;
 
     &::after {
-      content: url(../images/timetable/Arrow-min.png);
-
-      top: 50%;
-      transform: translate(-24%, -45%);
+      background-image: url(../images/timetable/Arrow-min.png);
+      width: 35px;
+      height: 12px;
+      transform: translate(20px, -50%);
     }
 
     &:hover::after {
-      content: url(../images/timetable/Arrow-min_hover.png);
-    }
-
-    &__content {
-      font-size: 14px;
-      padding: 6px 8px;
+      transform: translate(25px, -50%);
     }
   }
 }
@@ -275,7 +272,6 @@
   .timetable {
     height: 1245px;
   }
-
 
   .content-box3 {
     padding: 20px 14px 0px 15px;

@@ -103,23 +103,26 @@
     color: #fff;
     font-size: 14px;
     position: relative;
+    transition: outline 0.2s linear, border-color 0.2s linear;
 
     &:hover {
-      border-color: #bdcc9b;
-      color: #bdcc9b;
-      transition: color 0.2s linear, border-color 0.2s linear;
+      border-color: #757575;
+      outline: 1px solid #757575;
     }
   }
 
   &__button::after {
     content: url(../images/header/arrow.png);
     position: absolute;
-
-    transform: translate(16%, 10%);
+    transition: transform 0.2s linear;
+    transform: translateY(-50%);
+    top: 50%;
+    right: -38px;
+    display: block;
   }
 
   &__button:hover::after {
-    content: url(../images/header/arrow_hover.png);
+    transform: translate(15px, -50%);
   }
 }
 

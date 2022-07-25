@@ -524,19 +524,23 @@ a {
   color: #fff;
   font-size: 14px;
   position: relative;
+  transition: outline 0.2s linear, border-color 0.2s linear;
 }
 .content-intro__button:hover {
-  border-color: #bdcc9b;
-  color: #bdcc9b;
-  transition: color 0.2s linear, border-color 0.2s linear;
+  border-color: #757575;
+  outline: 1px solid #757575;
 }
 .content-intro__button::after {
   content: url(../images/header/arrow.png);
   position: absolute;
-  transform: translate(16%, 10%);
+  transition: transform 0.2s linear;
+  transform: translateY(-50%);
+  top: 50%;
+  right: -38px;
+  display: block;
 }
 .content-intro__button:hover::after {
-  content: url(../images/header/arrow_hover.png);
+  transform: translate(15px, -50%);
 }
 
 @media (max-width: 1360px) {
@@ -893,20 +897,6 @@ a {
 }
 
 .button-arrow {
-  position: relative;
-  width: 100%;
-}
-.button-arrow::after {
-  content: url(../images/timetable/arrow.png);
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  padding-right: 30px;
-}
-.button-arrow:hover::after {
-  content: url(../images/timetable/arrow_hover.png);
-}
-.button-arrow__content {
   background-color: transparent;
   border: 2px solid #fff;
   padding: 15px 34px;
@@ -919,11 +909,28 @@ a {
   display: inline-block;
   width: 100%;
   cursor: pointer;
+  position: relative;
+  transition: outline 0.2s linear, border-color 0.2s linear;
 }
-.button-arrow__content:hover {
-  border-color: #91aa59;
-  color: #91aa59;
-  transition: color 0.2s linear, border-color 0.2s linear;
+.button-arrow:hover {
+  border-color: #757575;
+  outline: 1px solid #757575;
+}
+.button-arrow::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url(../images/timetable/arrow.png);
+  width: 72px;
+  height: 12px;
+  background-repeat: no-repeat;
+  right: 0;
+  top: 50%;
+  transform: translate(40px, -50%);
+  transition: transform 0.2s linear;
+}
+.button-arrow:hover::after {
+  transform: translate(50px, -50%);
 }
 
 @media (max-width: 1360px) {
@@ -980,18 +987,17 @@ a {
   }
   .button-arrow {
     width: 84%;
-  }
-  .button-arrow::after {
-    content: url(../images/timetable/Arrow-min.png);
-    top: 50%;
-    transform: translate(-24%, -45%);
-  }
-  .button-arrow:hover::after {
-    content: url(../images/timetable/Arrow-min_hover.png);
-  }
-  .button-arrow__content {
     font-size: 14px;
     padding: 6px 8px;
+  }
+  .button-arrow::after {
+    background-image: url(../images/timetable/Arrow-min.png);
+    width: 35px;
+    height: 12px;
+    transform: translate(20px, -50%);
+  }
+  .button-arrow:hover::after {
+    transform: translate(25px, -50%);
   }
 }
 @media (max-width: 760px) {
@@ -1948,6 +1954,7 @@ a {
 }
 .footer__logo-wrapper {
   transform: translate(-20%, 10%);
+  cursor: pointer;
 }
 .footer__socials {
   padding-top: 8px;
